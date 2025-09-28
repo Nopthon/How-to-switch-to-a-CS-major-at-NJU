@@ -436,6 +436,8 @@
 <p>感谢转专业群的每一个人，当然也别忘了感谢努力过的自己。</p>
 <p>希望每个转cser都能成为心里所希望的一年后的自己，不论结果是什么。</p>
 <p>**做个好梦 (o゜▽゜)o☆ ** </p>
+<hr />
+<p>这里是一个孤单的评论区，你可以发送想发送的东西 or 想问的问题：</p>
 
 
 
@@ -443,10 +445,60 @@
 
 
 
+  
+  
 
 
 
 
+
+
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script src="https://giscus.app/client.js"
+        data-repo="Nopthon/How-to-switch-to-a-CS-major-at-NJU"
+        data-repo-id="R_kgDOP4PSPg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOP4PSPs4Cv_AS"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]");
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette");
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light";
+        giscus.setAttribute("data-theme", theme);
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function () {
+        var ref = document.querySelector("[data-md-component=palette]");
+        ref.addEventListener("change", function () {
+            var palette = __md_get("__palette");
+            if (palette && typeof palette.color === "object") {
+                var theme = palette.color.scheme === "slate" ? "dark" : "light";
+
+                /* Instruct Giscus to change theme */
+                var frame = document.querySelector(".giscus-frame");
+                frame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme } } },
+                    "https://giscus.app"
+                );
+            }
+        });
+    });
+</script>
 
                 
               </article>
