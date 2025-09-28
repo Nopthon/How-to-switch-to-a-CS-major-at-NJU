@@ -1,0 +1,16 @@
+site_name: 转cs指北 for NJU
+
+
+theme:
+  name: material
+  custom_dir: overrides
+
+repo_url: https://github.com/Nopthon/How-to-switch-to-a-CS-major-at-NJU
+
+repo_name: 转cs指北 for NJU 
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
