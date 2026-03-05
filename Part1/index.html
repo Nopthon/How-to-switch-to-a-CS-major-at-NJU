@@ -29,6 +29,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -63,7 +66,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -114,6 +124,42 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -634,14 +680,14 @@
 <p>对于大一学生，你需要在大一学习一层次数学（微积分ⅠⅡ + 线性代数），全部取得 80 分及以上的分数，并且在cs的五门基础课程中至少学习一门课并取得 80 分及以上的分数；</p>
 <details class="question">
 <summary>我真的只需要选一门准入课吗？！这个要求放的好宽啊</summary>
-<p>当然，你不能只考虑转cs时发生的事情，而不考虑转cs后需要做的事情</p>
-<p>如果你真的只想选择一门准入课并且转cs，不考虑实力问题（确实，对一些 OIer 来说完全可以去裸考转专业考试），你会发现你在接下来会为了满足“准出条件”付出代价</p>
-<p>什么是 “准出条件”？比如修读完所有的准出课程，这也是拿到你的毕业证的充分条件！</p>
+<p>当你下定决心转cs时，你要把自己当作一个cser</p>
+<p>你应该和其他 cser 一样，完成准出课程的学习。只选择一门准入课程确实不会影响你转专业，但是可能会影响你的毕业</p>
+<p>举个最简单的例子：你可以只选一门离散数学并凭借自身强大的实力通过转cs的选拔，但是你到了仙林校区之后，你依旧要选鼓楼校区的《程序设计基础》或者《计算机程序的构造与解释》课程，否则毕不了业</p>
 </details>
 <p>对于大二学生，你<strong>最晚需要在大二上学期</strong>完成一层次数学（微积分ⅠⅡ + 线性代数）的学习，全部取得 80 分及以上的分数，并且在大二结束时完成《离散数学》<strong>与</strong>《程序设计基础》（后者可以用《计算机程序的构造和解释》取代）的学习，并取得 80 分及以上的分数</p>
 <details class="warning">
 <summary>如果你是 24 级的二战转 cser，并且尚未获得原五学分《离散数学》的学分 / 总评小于 80 分</summary>
-<p>原五学分《离散数学》从 26 年春季学期开始停止开设，原《离散数学》要求替换为【改版后的《离散数学Ⅰ》与三选一的选修课程】</p>
+<p>原五学分《离散数学》已经停止开设。原《离散数学》要求替换为【改版后的《离散数学Ⅰ》与三选一的选修课程】</p>
 <p>三门选修课程分别为：《计算方法》（22010500，2学分）、《图论与算法》（22010810，2学分）、《组合数学》（22010240，2学分）</p>
 <p>如果大二上依旧没有满足《离散数学》要求，大二下需要根据上面的内容选课</p>
 </details>
@@ -660,19 +706,28 @@
 <summary>微积分 Ⅱ 对于转cs情境不允许重修</summary>
 <p>如果你有转cs专业的意向，但是微积分Ⅱ没有取得 80 分及以上的分数并决定重修，由于微积分Ⅱ重修在春季学期，这将导致在跨专业准入报名时，你没有取得微积分Ⅱ的学分，导致无法报名（这是2025年发布的文件中新修改的内容，将大二转专业的要求第一条从“须已修或者在修”修改为了“须已取得学分”）</p>
 <p>即：<strong>如果你有转cs专业的意向，必须在第一次修读微积分Ⅱ时就取得 80 分及以上的分数</strong></p>
-<p>另外，线性代数和微积分Ⅰ都是允许在大一下/大二上重修的，我不会告诉你笔者重修过线性代数，因为如果你在转专业过程中有重修经历的话，你真的需要好好考虑你是否需要“半路止损”，还是坚持走下去（对自己要有充分的认知）</p>
+<p>另外，线性代数和微积分Ⅰ都是允许重修的（微积分Ⅰ在秋季学期重修，线性代数全年可重修）。如果你在转专业过程中有重修经历的话，你真的需要好好考虑你是否需要“半路止损”，还是坚持走下去（对自己要有充分的认知）</p>
+<p>（有的时候笔者认为自己重修过线性代数依旧选择转专业挺莽的）</p>
 </details>
 <h2 id="2">2. 转专业考试的构成</h2>
 <p><strong>转cs考试包括笔试、机试、面试</strong>：</p>
-<p>笔试的考试范围大致为离散数学（为主） + 线性代数 or 微积分；</p>
-<p>机试考察 C/C++ 语言的程序设计能力（IOI 赛制的上机考试）；</p>
-<p>面试考察准入课的知识点掌握情况以及 “参加面试时的个人素养”</p>
-<p>每项考试都有内定的及格线，只有三次考试都达到及格线才有可能被录取。及格线并非简单的 “百分制60分”，根据往年经验，机试的及格线要求会较高（会斩杀超过一半的考生），而笔试也在一定程度上 “卡人”</p>
+<ul>
+<li>
+<p>笔试的考试范围大致为离散数学（为主） + 线性代数 or 微积分</p>
+</li>
+<li>
+<p>机试考察 C/C++ 语言的程序设计能力（IOI 赛制的上机考试）</p>
+</li>
+<li>
+<p>面试考察准入课的知识点掌握情况以及 “参加面试时的个人素养”（不用担心这个）</p>
+</li>
+</ul>
+<p>每项考试都有内定的及格线，只有三次考试都达到及格线才有可能被录取。及格线并非简单的 “百分制60分”。根据往年经验，机试的及格线要求会较高（会斩杀超过一半的考生），而笔试也在一定程度上 “卡人”</p>
 <div class="admonition quote">
 <p class="admonition-title">举个例子</p>
-<p>25年组织的转专业考试中，机试的及格线为 170/300</p>
-<p>内定的及格线只是一个参考，它就像是高考最低录取分数线，是根据最后一名的分数决定的，而不是先划线再筛人</p>
-<p>万一以后的哪一年转cs机试的难度和隔壁转软件工程的机试难度相当的话，我相信会出现 300/300 的及格线（开个玩笑，转cs的机试难度相对于常规的 C/C++ 课程的机试难度肯定是更高一点的）</p>
+<p>25年组织的转专业考试中，机试的及格线为 170/300，这是机试约第 12 名的分数</p>
+<p>其实内定的及格线只是一个参考，它就像是高考最低录取分数线，是根据最后一名的分数决定的，而不是先划线再筛人</p>
+<p>万一以后的哪一年转cs机试的难度和隔壁转软件工程的机试难度相当的话，我相信会出现 300/300 的及格线（开个玩笑，转cs的机试难度相对于常规的 C/C++ 课程的机试难度肯定是更高一点的，<del>我也绝对没有对转软机试难度作任何主观评价</del>）</p>
 </div>
 <p><strong>如何用一句话概括“如何转cs”：只要你将要求的课程修读并获得 80+ 的总评分数，参加转专业考试并且得到一个不错的分数，就能成功转入cs</strong></p>
 

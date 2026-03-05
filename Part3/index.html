@@ -29,6 +29,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -63,7 +66,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -114,6 +124,42 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -744,9 +790,14 @@
 <p>微积分ⅠⅡ分别在大一秋季学期与次年春季学期学习，而线性代数从大一上学期到大二上学期都有课程开设</p>
 <details class="failure">
 <summary>课程号为 1 开头的数学课（匡亚明学院开设的）不应该主动用于转专业，你应该也无法选中这门课</summary>
-<p><strong>除非你已经在学习匡院微积分/线性代数了，否则不要选课程号为 1 开头的数学课</strong></p>
-<p>（<del>原专业学习匡院微积分/线性代数的我觉得没有转专业的必要</del>）</p>
+<p><strong><u>除非你已经在学习匡院微积分/线性代数了</u>，否则不要选课程号为 1 开头的数学课</strong></p>
 <p>课程名相同不代表课程号相同，<strong>你在选课的时候应该永远以课程号相同为选课正确的标准</strong></p>
+<p>虽然说有匡院数学课转cs的先例，但是你不应该尝试，至少你得亲自问一问可行性</p>
+</details>
+<details class="warning">
+<summary>有关“匿名专家”？</summary>
+<p>一层次微积分、线性代数的难度从 25Spring 开始出现明显的难度上升（体现在考试），并且不再和往年卷有较强的拟合关系</p>
+<p>简单来说数学课 80+ 的难度增大了</p>
 </details>
 <details class="summary">
 <summary>主观的个人建议</summary>
@@ -755,17 +806,16 @@
 <p>以下是一些能帮助你在应试考试中取得较高分数的物品：</p>
 <ol>
 <li>
-<p>往年卷多多益善（大多数老师会在考试前发放近三年的电子版往年卷，而很多民间群里能找到更早的往年卷，像高中那样多写写题有好处的，这是为数不多能靠刷题得高分的大学课程了）</p>
+<p>往年卷多多益善（大多数老师会在考试前发放近三年的电子版往年卷，而很多民间群里能找到更早的往年卷，像高中那样多写写题有好处的，这是为数不多靠刷题得高分的大学课程了）</p>
 </li>
 <li>
 <p>《大学数学典型题解析》（很老的书，几乎只能买到翻印版，可以去淘宝的“小蓝鲸书店”看看有没有二手库存；有电子版；会“偶遇”考试原题）</p>
 </li>
 </ol>
 <p>前者能让你适应考试节奏与手感并巩固知识点，后者（尤其是高等数学分册，封面是黄色的，对应微积分ⅠⅡ的学习）能帮助冲高分</p>
-<p>如果你不希望仅仅面向考试学习线性代数，推荐自学 MIT 18.06: Linear Algebra 这门课，这门课确实相比国内的课程对以后的cs专业课学习更有帮助</p>
 </details>
 <h2 id="_3">· 专业课</h2>
-<p><u>总共有五门可选择的专业课：《程序设计基础》《计算机程序的构造和解释》《离散数学》《数字逻辑与计算机组成》《高级程序设计》</u></p>
+<p><u>总共有五门可选择的专业课：《程序设计基础》《计算机程序的构造和解释》《离散数学Ⅰ》《数字逻辑与计算机组成》《高级程序设计》</u></p>
 <h3 id="1-1-1-2"><span style="color:  #A0522D;">《程序设计基础》（开设学期：1-1 1-2）</span></h3>
 <div class="admonition tip">
 <p class="admonition-title">1-1 1-2 即“大一第一学期”和“大一第二学期”</p>
@@ -774,11 +824,15 @@
 <p>主要的教学参考用书是《程序设计教程：用C++语言编程》（前五章不涉及 C++ 特性的内容）和《C语言程序设计：现代方法》（比上一本用的书好）</p>
 <p>期中、期末考试为笔试，期间穿插三次机试，学期末有一次大作业，平时每周会有几道上机题当作业（上机课的大多数时间都是用来写作业的）</p>
 <p><del>笔试机试难度都适中偏友好，有基础的比较容易 95+，无基础的 90+ 也不难（吧）</del></p>
-<p>实际上机试难度中等，笔试因为会考比较细的 C 语言知识点（尤其是解答题）需要额外准备，可能写简答题之类的会比较难受（</p>
+<p>机试难度中等，笔试因为会考比较细的 C 语言知识点（尤其是解答题）需要额外准备，可能写简答题之类的会比较难受</p>
 <details class="summary">
 <summary>主观的个人建议</summary>
 <p>这门课和《计算机程序的构造和解释》是二选一关系（也可以都选，但是会比较累）</p>
 <p>期中/期末考试都是笔试，而且有简答题这种题型。零基础的学生可能需要注意一些知识点细节（比如可能会问“冯诺依曼计算机体系结构的构成”），而不仅仅是会敲代码</p>
+<p><strong>这门课一定不要依赖 AI！！所有的代码必须亲手实现！！</strong></p>
+<blockquote>
+<p>记得是《程序设计基础》的某一次上机测试，据说场上得分率低的吓人，但是在我们（指转cs群学长）看到实际的考题后，发现这大概率不是因为题目难度过大，而是因为小登不够熟练，sad</p>
+</blockquote>
 </details>
 <h3 id="1-1"><span style="color:  #A0522D;">《计算机程序的构造和解释》（开设学期：1-1）</span></h3>
 <p>基于计算机科学入门课 <a href="https://cs61a.org">Berkeley CS61A</a> 设计的一门课（A Clone of Berkeley CS61A）</p>
@@ -788,6 +842,7 @@
 <p>课程安排、作业设置情况等可通过课程官网了解，这门课所有的课件资源都在官网公开，OJ系统也可以在没选这门课的情况下申请账号使用，此处不赘述。</p>
 <p>这门课没有平时分，作业占比50%，期中期末各25%，给分情况还不错（虽然期中考试平均分通常在 60 左右，但是<del>总评会进行调控</del>），但是<strong>高分看能力</strong></p>
 <p>总体来说这是很优质的一门课，就是<strong>对纯cs新手真的不太友好，真的有难度</strong></p>
+<p>给个参考文献：<a href="https://njuics-wiki.github.io/ics-wiki/Course/SICP/">计算机程序的构造与解释 - ICS Wiki</a></p>
 <details class="summary">
 <summary>主观的个人建议</summary>
 <p>这门课的难度对于一个大一新生来说（尤其对无编程经历的人来说）不会很简单，但是你确实可以学到很多东西</p>
@@ -809,9 +864,9 @@
 <p><strong>转专业考试的笔试试题一直以离散数学为主（通常占比 3/4），并且机试试题往往也会出现一道图论相关的题目，所以这门课对于一个转CSer来说基本是必选（除非你真的系统学过相关内容，否则一定要学习离散数学）</strong></p>
 </details>
 <h3 id="1-2-2-1"><span style="color:  #A0522D;">《数字逻辑与计算机组成》（开设学期：1-2 2-1）</span></h3>
-<p>一门较为硬核的专业课，前半部分从逻辑门、CMOS电路讲到组合逻辑、时序逻辑电路，后半部分会介绍 RISC 架构 CPU 的运算部件、指令集等，最终你将实现一个能够执行 RV32I 指令集的单周期 RISC-V CPU，并且对多周期CPU、流水线CPU等有一定的了解（<del>哇听上去好高大上</del>）。课程部分参考了 <a href="https://cs61c.org">Berkeley CS61C</a>。</p>
+<p>一门较为硬核的专业课，前半部分从逻辑门、CMOS电路讲到组合逻辑、时序逻辑电路，后半部分会介绍 RISC 架构 CPU 的运算部件、指令集等，最终你将实现一个能够执行 RV32I 指令集的单周期 RISC-V CPU，并且对多周期CPU、流水线CPU等有一定的了解（<del>哇听上去好高大上</del>）。课程部分参考了 <a href="https://cs61c.org">Berkeley CS61C</a></p>
 <p>主要的教学参考用书是《数字逻辑与计算机组成》（及其配套的“习题解答与实验教程”），主要用到的软件是仿真电路软件 Losigim</p>
-<p>作业包括教材后的课后习题（挑部分题目），六次 Logisim 仿真实验（前三次只需线上OJ完成并完成实验报告，后三次在此基础上会有三次线下验收课，你需要向助教展示你的电路与思考题实现）；</p>
+<p>作业包括教材后的课后习题（挑部分题目），六次 Logisim 仿真实验（前三次只需线上OJ完成并完成实验报告，后三次在此基础上会有三次线下验收课，你需要向助教展示你的电路与思考题实现）</p>
 <p>分数组成：课后作业、问答等平时成绩 15%；六次实验成绩 35% （包括实验验收+报告）；期末考试成绩 50%。给分较为友好，期末成绩影响较大（虽然有捞分但是还是得努努力）</p>
 <details class="summary">
 <summary>主观的个人建议</summary>
@@ -829,12 +884,11 @@
 <p>程序设计基础 PLUS，注重 C++ 的面向对象编程，形式和程序设计基础差不多</p>
 <p>主要的教学参考用书是《程序设计教程：用C++语言编程》（从第六章开始的内容），课程目标是 “加深对面向对象、泛型、事件驱动、异常处理等程序设计基本概念和技术的理解和掌握，加强解决实际问题的能力”</p>
 <p>课程结构参考《程序设计基础》</p>
-<p>给分客观</p>
+<p>我没学这门课，所以我希望这里有更多元的评价</p>
 <details class="summary">
 <summary>主观的个人建议</summary>
-<p>这门课目前来看不是很优质，但是据说会改革</p>
-<p>高级程序设计这门课有趣的一点是：鼓励使用AI（考试不算）</p>
-<p>遗憾的是我没有选这门课，因为这门课算作必修是从 25 级小登开始的 (happy)</p>
+<p>我没选这门课，我不评价了</p>
+<p>有想要评价的过来人可以提个 discussion / issue</p>
 </details>
 
 

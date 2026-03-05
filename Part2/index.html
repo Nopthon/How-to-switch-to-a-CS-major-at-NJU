@@ -29,6 +29,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -63,7 +66,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -114,6 +124,42 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -629,71 +675,84 @@
 <p>了解一下转专业考试的具体内容会为你的转专业之路提供参考，达到有的放矢</p>
 <p>以及你可以找到一些往年回忆试题，这些是最直接的参考资料</p>
 </div>
-<p>以下包含了转专业考试的具体内容，由于跨大类准入方案中只会告诉你有“笔试、机试、面试”，连考试范围都不会告诉你，所以下面的内容仅供参考</p>
+<p>以下包含了转专业考试的具体内容，<strong>由于跨大类准入方案中只会告诉你有“笔试、机试、面试”，连考试范围都不会告诉你，所以下面的内容仅供参考</strong></p>
 <div class="admonition success">
 <p class="admonition-title">好消息是</p>
-<p>转cs考试的形式一直没有什么变化，所以你完全可以参考下面的内容</p>
+<p>转cs考试的形式和考试范围这几年一直没有什么变化，所以你可以以 99.9%+ 的置信度参考下面的内容</p>
 </div>
 <h2 id="_2">笔试</h2>
-<div class="admonition bug">
-<p class="admonition-title">考虑到从 25 级开始《离散数学》拆分为两门课，其中只有《离散数学Ⅰ》为必修，暂不清楚笔试考试范围是否会有改动</p>
+<div class="admonition warning">
+<p class="admonition-title">关于离散数学的考试范围</p>
+<p>现有的 3 学分《离散数学Ⅰ》的知识点范围并没有完整包括转cs笔试的考试知识点范围（有可靠的信息来源）</p>
+<p>你应该参考 5 学分《离散数学》的知识点范围，<strong>至少也需要在 3 学分离散的基础上学习群论</strong></p>
 </div>
 <p>两个小时、四道数学题，往年都是三道离散数学，外加一道微积分或者线性代数</p>
 <p>24 年笔试试题的四道题分别是 群论 + 集合论 + 微积分 + 图论</p>
 <p>25 年笔试试题的四道题分别是 群论 + 集合论 + 线性代数 + 图论</p>
 <p>笔试难度不固定，比如 25 年笔试难度明显大于 24 年的，但是 25 年笔试的线性代数题目简单（第一小问甚至是期中考试真题）</p>
-<p>群论和集合论的题目都需要<strong>扎实的离散数学基础</strong>，而图论的题目通常很难（虽然 24 年是一个例外）；微积分/线代题通常不难，<del>写不出来心里会很难受</del></p>
+<p>群论和集合论的题目都需要<strong>扎实的离散数学基础</strong>，而图论的题目通常很难（24 年是一个例外）；微积分/线代题通常不难，<del>写不出来心里会很难受</del></p>
 <details class="example">
 <summary>对于 25 年的笔试题，一些参考如下</summary>
 <p>25 年笔试的斩杀线大概是完整写出一题 + 一到两题写出部分步骤分的程度：</p>
-<p>第一题尝试求出 Sylow p-q子群的个数就能拿到一些步骤分，可以争取完整证明；</p>
-<p>第二题考虑到原题干似乎缺少条件，对写出这题有阻碍，实际上不是太难；</p>
-<p>第三题作为全场唯一较为简单的题目需要尽可能进行完整证明；</p>
+<ul>
+<li>
+<p>第一题尝试求出 Sylow p-q子群的个数就能拿到一些步骤分，可以争取完整证明</p>
+</li>
+<li>
+<p>第二题考虑到原题干似乎缺少条件，对写出这题有阻碍，实际上不是太难</p>
+</li>
+<li>
+<p>第三题作为全场唯一较为简单的题目需要尽可能进行完整证明</p>
+</li>
+<li>
 <p>第四题考场上能写出来严谨证明的人应该极少</p>
+</li>
+</ul>
+<p>你可以在转cs群里得到 25 年的回忆试题</p>
 </details>
+<p>你可能要问笔试的分数线是多少，我只能说能写的尽量写，假装老师会捞人</p>
 <h2 id="_3">机试</h2>
-<p>三个小时、三道OJ题，形式可以参考 Luogu 的非 Div4 比赛设置</p>
+<p>三个小时、三道 OJ 题，形式可以参考 Luogu 的非 Div4 比赛设置，难度参考 Luogu Div3</p>
 <div class="admonition quote">
-<p class="admonition-title">有关机试的具体细节/要求</p>
+<p class="admonition-title">有关机试的琐碎细节/要求</p>
 <p><strong>IOI 赛制</strong>, 提交即出结果且可反复提交（你可以查一查 IOI 赛制是什么）</p>
 <p>试题通过试题册单独提供而不会在 OJ 上提供；每道题目按照测试点平均给分, 题型均为传统题, 内存上限均为 512MB</p>
-<p>使用与 CPL / 问题求解 相同的 OJ，只允许用 C/C++ 提交（具体地说，<strong>C++ 使用的版本是 C++17</strong>, C 语言使用的版本是 C17；另外Python与Java的提交得分无效）, 每 15s 允许提交一次</p>
+<p>使用与 CPL / 问题求解 课程相同的 OJ 环境，只允许用 C/C++ 提交（具体地说，<strong>C++ 使用的版本是 C++17</strong>, C 语言使用的版本是 C17；另外Python与Java的提交得分无效），每 15s 允许提交一次</p>
 <p>允许使用的 IDE 有: Embarcadero Dev-C++, Code::Blocks, VSCode（安装了必要插件的离线版）, VS (没有 Clion)</p>
-<p>可以用万能头 bits/stdc++.h，换行符用 <code>endl</code> <code>\n</code> 都可以（Windows 环境）</p>
+<p>可以用万能头 bits/stdc++.h，换行符用 <code>endl</code> <code>\n</code> 都可以（评测机是 Windows 环境）</p>
 <p>场上会有大屏幕实时展示匿名榜单，只展示用户名和分数（用户名和密码会以密码条的形式现场提供）</p>
 <div class="admonition question">
 <p class="admonition-title">如果你担心上面的细节会有所改变的话</p>
-<p>在笔试后有半小时试机时间, 可以熟悉编程环境（<del>以及不太好用的键盘</del>）；另外上面所提供的内容都会下发 PDF 文件进行详细说明，你可以在试机时了解</p>
+<p>在笔试后有半小时试机时间, 可以熟悉编程环境（<del>以及不太好用的键盘</del>）；另外<strong>以上所有内容都会下发 PDF 文件进行详细说明</strong>，你可以在试机时了解</p>
 </div>
 </div>
 <p>从难度来说，AK 机试的能力需求超过了 CSP-J 要求，但通过机试只需要你掌握求大部分 CSP-J 内容即可</p>
 <div class="admonition warning">
-<p class="admonition-title">换句话来说，压线过机试和满分过机试的结果都是 Accepted，真的没有任何区别</p>
+<p class="admonition-title">压线过机试和满分过机试的结果都是 Accepted，真的没有任何区别。有的时候不需要追求绝对完美</p>
 </div>
 <p>个人<strong>主观</strong>认为需要重点掌握的知识点包括：</p>
 <blockquote>
 <p>OI-Wiki 里 “算法基础” 板块的所有内容（真正的基础，必须学）</p>
-<p>动态规划（线性dp、背包dp即可，但是 dp 本身不简单，一定要多练）</p>
-<p>图论（DFS、BFS、最短路等，离散课你会学到，但是敲代码你得自己来）</p>
-<p>常用的 C++ STL 库操作（STL 库真的很好用，C 语言没有这些）；一些有关加快 <code>cin</code> <code>cout</code> 速度的技巧，更进一步的可以尝试掌握快读快写（都是防止卡常的）</p>
+<p>动态规划（个人认为线性dp、背包dp即可，但是 dp 本身不简单，一定要多练）</p>
+<p>图论（DFS、BFS、最短路等，离散课你会学到理论知识，但是敲代码你得自己来）</p>
+<p>常用的 C++ STL 库操作（STL 库真的很好用，C 语言没有这些）；一些有关加快 <code>cin</code> <code>cout</code> 速度的技巧，更进一步的可以尝试掌握快读快写（防止卡常 / 骗部分分）</p>
 </blockquote>
 <div class="admonition failure">
 <p class="admonition-title">虽然我列出了一些很明确的知识点，但是：</p>
-<p><strong>不要针对上面的内容过拟合复习，什么类型的题都刷一刷，多打打 Div3 难度的比赛才是硬道理</strong></p>
-<p>（机试的难度大概是 Div3）</p>
+<p><strong>不要针对上面的内容过拟合复习，什么类型的题都刷一刷，多打打比赛才是硬道理</strong></p>
 <p>万一考试考个字符串你不会用 <code>string</code> 相关函数怎么办，我认真的</p>
 </div>
-<p>25 年的斩杀分数线是 170 分（按照满分 300 分计算，大一大二都一样），考虑到 25 年机试的第一题很简单，也就是说后两题都需要得到一定的部分分。</p>
+<p>25 年的斩杀分数线是 170 分（按照满分 300 分计算，据说大一大二及格线相同），考虑到 25 年机试的第一题很简单，也就是说后两题都需要得到一定的部分分。</p>
 <p>可以这么说：机试达到 200+ 基本上不用担心被卡</p>
 <p>（25 年大一大二机试超过 200 分的有 5 人，供参考；同时还有另一个极端是：机试没有达到 100 分的人也有这么多的人数，所以不要太神化你的对手）</p>
 <h2 id="_4">面试</h2>
 <p><strong>无需任何准备，自信面对即可</strong></p>
-<p>转cs面试不需要准备自我介绍 / PPT / 成绩单等各种东西，因为面试问的内容会非常随机，而且大多数问题都是专业课/学业规划相关。答不出考官问的问题非常正常，实事求是说自己不知道也是完全没有问题的</p>
+<p>转cs面试不需要准备自我介绍 / PPT / 成绩单等各种东西，因为面试问的内容会非常随机，而且大多数问题都是专业课/学业规划相关。答不出考官问的问题非常正常，实事求是说自己不知道也是完全没有问题的。另外，考官应该不知道学生的 GPA 和选课情况</p>
 <p>面试几乎不卡人，只要不把考官惹火了 / 问啥啥不会以至于面试无法推进就不会有问题</p>
 <p>附：面试教室</p>
 <p>（面试者站在讲台前，三名考官坐在台下）</p>
-<p>（照片拍摄于某天的 23:45，所以第一张照片可能会带来错误的氛围感）</p>
 <p>（面试教室和对应的三名考官是随机的）</p>
+<p>（照片拍摄于某天的 23:45，所以第一张照片可能会带来错误的氛围感）</p>
 <p><img src="https://pic1.imgdb.cn/item/68ef20c9c5157e1a88738814.jpg" alt="6401bce354d186118bc645a0ad7c8de2_720.jpg"></p>
 <p><img src="https://pic1.imgdb.cn/item/68ef21eec5157e1a88738df5.jpg" alt="28993d8b58ca81c07ae6823fd0ee5d13_720.jpg"></p>
 

@@ -27,6 +27,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -61,7 +64,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -112,6 +122,42 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -513,28 +559,85 @@
 <h1 id="update">Update</h1>
 <p>此处记录每一次更新指南的 Log，这样你在指北每次更新时就不需要去找改动的地方了：</p>
 <p>如果你是第一次看指北，你不需要看这里的 Update 内容，原文已经是最新内容了</p>
-<div class="admonition success">
-<p class="admonition-title">Updated on 2025/10/22</p>
-<p>根据 https://jw.nju.edu.cn/24/04/c26263a795652/page.psp 的最新通知：</p>
+<details class="success" open="open">
+<summary>Updated on 2026/03/05</summary>
+<p>以下是重要的修改：</p>
+<ul>
+<li>
+<p>对一层次数学课的难度进行了重新评价。你大概率已经听说过<del>臭名昭著的</del>“匿名专家”，微积分考试的难度肉眼可见的上升，而转cs的数学课 80+ 要求依旧不变。因此总的来说转cs难度增大了。为对数学课难度的错误估计感到非常抱歉（sad）</p>
+</li>
+<li>
+<p>根据转cs负责人的回复：<strong>转cs笔试的考试范围（离散部分）为原 5 学分《离散数学》对应的完整知识点</strong>，这里给出 5 学分离散的课程安排：</p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>逻辑与证明（15%）</p>
+<ul>
+<li>命题逻辑、谓词逻辑、推理、证明方式</li>
+</ul>
+</li>
+<li>
+<p>离散结构（50%）</p>
+<ul>
+<li>集合、图、树</li>
+</ul>
+</li>
+<li>
+<p><em>代数系统（20%）</em></p>
+<ul>
+<li><em>群论、格、布尔代数</em></li>
+</ul>
+</li>
+<li>
+<p><em>计数技术与离散概率（15%）</em></p>
+<ul>
+<li><em>计数、组合数学、递归、离散概率</em></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>相比之下，现在的 3 学分《离散数学Ⅰ》只保留了“逻辑与证明”和“离散结构”，后面的两个板块需要你自学</p>
+<p>你可以在转cs交流群中获得 Spring2025 的 5 学分离散完整课件 &amp;&amp; 作业（无答案）</p>
+<hr />
+<p>以下是一些不重要的修改，包括但不限于：</p>
+<ul>
+<li>删除了笔者对《高级程序设计》的所有主观评价，因为我没选</li>
+<li>更加细微的语言组织，主要是减少病句，你可能看不出来</li>
+<li>添加了深色模式的切换，如果你真的需要的话，反正我挺喜欢</li>
+<li>移除了 him，好耶</li>
+</ul>
+</details>
+<details class="success">
+<summary>Updated on 2025/10/22</summary>
+<p>以下是重要的修改：</p>
+<p>根据 <a href="https://jw.nju.edu.cn/24/04/c26263a795652/page.psp">2024级计算机学院跨学院专业准入课程调整的通知</a> ：</p>
 <p>“因培养方案及教学计划调整，计算机学院准入课程《离散数学》（22000020，5学分）于2025-2026学年第二学期停止开课。2024级拟申请跨学院专业准入计算机学院但仍未取得《离散数学》（22000020，5学分）课程学分或该课程成绩未达到80分以上（含80分）要求的同学，须修读《离散数学Ⅰ》（22000210A，3学分）以及“《计算方法》（22010500，2学分）、《图论与算法》（22010810，2学分）、《组合数学》（22010240，2学分）”三门课程中任意一门，2025-2026学年第二学期结束时取得相应的学分且课程成绩均要求80分以上（含80分），认定满足准入课程《离散数学》（22000020，5学分）的学分和成绩要求，其他准入要求保持不变。”</p>
 <p>也就是说对于 24 级学生（二战转cs），如果在大二上学期结束前没有获得五学分《离散数学》的学分 / 小于 80 分，需要在大二下学期修读【改版后的《离散数学Ⅰ》与三选一的选修课程】，以替代原五学分《离散数学》</p>
-<p>暂不清楚是否会影响之后的转专业选课要求，也不清楚《离散数学》的拆分会不会影响转专业笔试的题目构成</p>
-<p>顺便折叠了几个 Admonition 块，修改了一些中文语法问题(?)，以及 him 还是没有移除</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Updated on 2025/10/15</p>
-<p>去了趟计科院系楼，顺便拍了一下面试教室</p>
-<p>现在在 Part2 板块的结尾可以看到面试教室的照片</p>
+<p>暂不清楚是否会影响之后的转专业选课要求，也不清楚《离散数学》的拆分会不会影响转专业笔试的题目构成（upd: 参考 2026/03/05 的更新说明）</p>
+<hr />
+<p>以下是一些不重要的修改，包括但不限于：</p>
+<ul>
+<li>折叠了几个 Admonition 块</li>
+<li>修改了一些中文语法问题(?)</li>
+<li>以及 him 还是没有移除</li>
+</ul>
+</details>
+<details class="success">
+<summary>Updated on 2025/10/15</summary>
+<p><em>这是一个没有信息量的更新，仅仅是页面美化</em></p>
+<p>去了趟计科院系楼，顺便拍了一下面试教室。现在在 Part2 板块的结尾可以看到面试教室的照片</p>
 <p>以及修补了一些文字，加了一条选课相关的 Q&amp;A，加上了 csbooks 的链接</p>
 <p>顺便把字体改成了 <code>font-family: "JetBrains Mono", "LXGW WenKai"</code> 的配置，如果这个字体影响到阅读，或许会在下一次更新时回退字体设置</p>
 <p>并没有移除 him，非常抱歉</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Updated on 2025/9/30</p>
+</details>
+<details class="success">
+<summary>Updated on 2025/9/30</summary>
 <p><strong>添加了对“是否能用非一层次数学课转cs”的解释：</strong></p>
 <p>根据计算机学院的教务：转专业严格按照本科生院发布的《大学通修数学替代关系表》实施替代关系，所以理论上允许了使用数学分析/高等代数，甚至是匡亚明学院微积分/线性代数的转cs可行性（<strong>只提供客观可行方案</strong>）</p>
-<p>当然，二层次数学课不可以</p>
-</div>
+<p>当然，二层次数学课不可以，个人还是建议选择一层次数学课，以避免不必要的变数</p>
+</details>
 
 
 

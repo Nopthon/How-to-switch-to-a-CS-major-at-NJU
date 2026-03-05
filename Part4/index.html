@@ -29,6 +29,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -63,7 +66,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -114,6 +124,42 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -423,17 +469,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#oi-cs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        我没有任何 OI 基础，还有没有必要考虑转cs？
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#80" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -493,6 +528,17 @@
     <span class="md-ellipsis">
       
         我在退补选开始前遇到了这样一个问题：我的（已经选中的）课程 A 与想选择的课程 B 冲突了，我可以在退补选时先选择课程 B，再换其他时间的课程 A 吗
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oi-cs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        我没有任何 OI 基础，还有没有必要考虑转cs？
       
     </span>
   </a>
@@ -648,17 +694,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#oi-cs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        我没有任何 OI 基础，还有没有必要考虑转cs？
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#80" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -725,6 +760,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#oi-cs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        我没有任何 OI 基础，还有没有必要考虑转cs？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#cs" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -782,24 +828,17 @@
 <p class="admonition-title">Tip</p>
 <p>持续更新，可以在结尾的评论区中自由提问</p>
 </div>
-<h3 id="oi-cs"><span style="color: #008000;">我没有任何 OI 基础，还有没有必要考虑转cs？</span></h3>
-<p>​   首先，一些高考失利的 OI 大神（指机试随便 AK 那种级别的）在开学的二次拔尖选拔中就已经去了计算机拔尖班，所以不要担心所有的转专业名额都会被强大的 OIer 占据</p>
-<div class="admonition quote">
-<p class="admonition-title">虽然 OIer 确实会占据一半左右的名额</p>
-</div>
-<p>​   大一一年的时间足够你追赶那些 OIer ：大一下学期认真学习离散数学可以让你应对笔试，并且对机试的图论题有理论上的帮助；大一上学期掌握 C/C++ 的基本语法，最晚从寒假开始打开 OI-Wiki 规划 OI 学习并努力刷题（洛谷有精选题单），平时有空多打打 Div <strong>3</strong>/4 难度的比赛当作仿真机试，你的机试成绩一定不会差（之前提到过，25 年机试有好几个人的得分低于 100 分，所以不要太神化你的对手，放平心态）</p>
-<p>​   当然，如果你现在还在准大一的暑假，看到这里，不妨从现在开始写下你的第一行 <code>cout &lt;&lt; "Hello World";</code> （虽然我非常建议高考完后的暑假多玩一玩，但是在没有任务驱动的情况下学学C语言我也是非常建议的）</p>
 <h3 id="80"><span style="color: #008000;">五门专业课我选了不止一门，必须要全部达到 80+ 吗？</span></h3>
 <p>​   不一定，但你应该当作是“一定”。</p>
 <p>​   按照往年经验，应该遵循“选的课都要 80+”，但是 24 级的实际录取情况打破了这一经验。仍然非常建议将所有的专业课考到 80+，这至少会减少 “转专业能不能成功” 的变数</p>
 <h3 id="_1"><span style="color: #008000;">《程序设计基础》《计算机程序的构造与解释》是二选一的课，我该怎么选择呢</span></h3>
-<p>​   根据某次统计，超过一半的 25 级转专业学生选择同时修读这两门课，但是之后有人退选了《计算机程序的构造与解释》（课程冲突与课程难度的因素都有）</p>
+<p>​   根据某次统计，超过一半的 25 级转专业学生选择同时修读这两门课，然后陆续有人退选了《计算机程序的构造与解释》（课程冲突与课程难度的因素都有）</p>
 <p>​   这两门课的取舍看你自己，从能力和精力角度进行考量</p>
 <div class="admonition question">
 <p class="admonition-title">我看这里还有一门叫做《问题求解》的课程...</p>
 <div class="admonition failure">
 <p class="admonition-title">除非你有比较强大的 OI 基础，否则<strong>一定不要选</strong></p>
-<p>《问题求解》对于无基础的大一新生的重量级程度可以参考隔壁数学学院zfh老师曾经<strong>面向大一新生开设</strong>的《代数学思想漫谈》，多的我不说了，毕竟《问题求解》是国家级精品课程</p>
+<p>《问题求解》对于无基础的大一新生的重量级程度可以参考隔壁数学学院zfh老师<strong>面向大一新生开设</strong>的数学通识课，多的我不说了，毕竟《问题求解》是国家级精品课程</p>
 </div>
 </div>
 <h3 id="80_1"><span style="color: #008000;">转专业最终结果真的只会参考准入课 80 分斩杀线和笔试/机试/面试的分数吗？</span></h3>
@@ -826,6 +865,13 @@
 <p class="admonition-title">听上去有点离谱，但是</p>
 <p>真的会有老师不看申请理由直接光速通过免修不免考（没绷住）</p>
 </div>
+<h3 id="oi-cs"><span style="color: #008000;">我没有任何 OI 基础，还有没有必要考虑转cs？</span></h3>
+<p>​   首先，一些高考失利的 OI 大神（指机试随便 AK 那种级别的）在开学的二次拔尖选拔中就已经去了计算机拔尖班，所以不要担心所有的转专业名额都会被强大的 OIer 占据</p>
+<div class="admonition quote">
+<p class="admonition-title">虽然 OIer 确实会占据一半左右的名额</p>
+</div>
+<p>​   大一一年的时间足够你追赶那些 OIer ：大一下学期认真学习离散数学可以让你应对笔试，并且对机试的图论题有理论上的帮助；大一上学期掌握 C/C++ 的基本语法，最晚从寒假开始打开 OI-Wiki 规划 OI 学习并努力刷题（洛谷有精选题单），平时有空多打打 Div <strong>3</strong>/4 难度的比赛当作仿真机试，你的机试成绩一定不会差（之前提到过，25 年机试有好几个人的得分低于 100 分，所以不要太神化你的对手，放平心态）</p>
+<p>​   当然，如果你现在还在准大一的暑假，看到这里，不妨从现在开始写下你的第一行 <code>cout &lt;&lt; "Hello World";</code> （虽然我非常建议高考完后的暑假多玩一玩，但是在没有任务驱动的情况下学学C语言我也是非常建议的）</p>
 <h3 id="cs"><span style="color: #008000;">我可以在大一下学期开始着手转cs吗</span></h3>
 <p>​   理论可行，但是你的意志依旧不够坚定，请斟酌。</p>
 <p>​   一个更客观的答案：“只要你将要求的课程修读并获得 80+ 的总评分数，参加转专业考试并且得到一个不错的分数，就能成功转入cs”，所以从流程上来说没有什么问题</p>
