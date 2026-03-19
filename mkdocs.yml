@@ -1,9 +1,32 @@
 site_name: 转cs指北 for NJU
 
-
 theme:
   name: material
   custom_dir: overrides
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 
 repo_url: https://github.com/Nopthon/How-to-switch-to-a-CS-major-at-NJU
 
@@ -13,3 +36,20 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
+  - https://fonts.loli.net/css?family=JetBrains Mono:400,500,600,700&display=swap
+  - https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/lxgwwenkai-regular.css
+  - https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/lxgwwenkaimono-bold.css
+
+nav: 
+  - Update: update.md
+  - 前言: index.md
+  - 零. 近年转cs的情况: Part0.md
+  - 一. 转cs的官方流程: Part1.md
+  - 二. 转专业考试的具体内容: Part2.md
+  - 三. 准入课的介绍 && 评价: Part3.md
+  - 四. 一些 Q&A: Part4.md
+  - 五. 作为一个零基础转p的个人建议: Part5.md
+  - 最后...: Part6.md
