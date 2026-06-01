@@ -1,21 +1,65 @@
+/* 设定整个网站的字体 */
 body {
     font-family: "LXGW WenKai", "JetBrains Mono";
 }
 
+
+/* 设定代码块的字体 */
 :root {
     --md-text-font: "JetBrains Mono", "LXGW WenKai"; 
     --md-code-font: "JetBrains Mono", "LXGW WenKai";
 }
 
+
+/* 设定代码注释的颜色为绿色 */
 :root > * {
     --md-code-hl-comment-color: #38b228;
 }
 
+
+/* KaTeX 相关 */
+.katex .text .mord {
+    font-family: "KaTeX_Main", "LXGW WenKai", "JetBrains Mono", "sans-serif";
+}
+
+
+/* 统一化调整公式块边缘的空白大小 */
+/* 这要求 Latex 公式块的上下两侧必须有空行 */
+.katex-display {
+    margin-top: -0.75em !important;
+    margin-bottom: -0.75em !important;
+}
+
+
+/* 给块级公式添加浅色细边框 */
+.md-typeset div.arithmatex {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem 0;
+}
+[data-md-color-scheme="slate"] .md-typeset div.arithmatex {
+    border-color: rgba(200, 200, 200, 0.2);
+}
+
+
+/* 为 Blog 页面的每一个 article 块添加一个圆角边框 */
+.md-post.md-post--excerpt {
+    border: 1px solid #aeb2b8;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* Adnomition 块的字体稍微调大了一点 */
 .md-typeset .admonition, .md-typeset details {
     font-size: .7rem;
 }
 
-.katex .mord.text,
-.katex .text .mord {
-    font-family: "KaTeX_Main, LXGW WenKai", "JetBrains Mono", sans-serif;
-}
+/* 各级标题的字体大小也修改一下 */
+.md-content h2 { font-size: 1.35rem; }
+.md-content h3 { font-size: 1.20rem; }
+.md-content h4 { font-size: 1.10rem; }
+.md-content h5 { font-size: 1rem; }
+.md-content h6 { font-size: 0.9rem; }

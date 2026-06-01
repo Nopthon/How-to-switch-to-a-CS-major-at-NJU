@@ -1,0 +1,1294 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Part6/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>✍️ - 转cs指北 for NJU</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    
+      <link rel="stylesheet" href="https://fonts.loli.net/css?family=JetBrains Mono:400,500,600,700&amp;display=swap">
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/lxgwwenkai-regular.css">
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/lxgwwenkaimono-bold.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="转cs指北 for NJU" class="md-header__button md-logo" aria-label="转cs指北 for NJU" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            转cs指北 for NJU
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ✍️
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Nopthon/How-to-switch-to-a-CS-major-at-NJU" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    转cs指北 for NJU
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="转cs指北 for NJU" class="md-nav__button md-logo" aria-label="转cs指北 for NJU" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    转cs指北 for NJU
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Nopthon/How-to-switch-to-a-CS-major-at-NJU" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    转cs指北 for NJU
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    零. 近年转cs的情况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一. 转cs的官方流程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    二. 转专业考试的具体内容
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    三. 准入课的介绍 &amp;&amp; 评价
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    四. 一些 Q&amp;A
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    五. 作为一个零基础转p的个人建议
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    最后...
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ✍️
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ✍️
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        笔试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="笔试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2024 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2022" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2022 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2021 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2020 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2019" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2019 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        机试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="机试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2025_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2024_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2024 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2023 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2021_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2021 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2019_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2019 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        笔试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="笔试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2024 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2022" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2022 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2021 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2020 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2019" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2019 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        机试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="机试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2025_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2024_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2024 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2023 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2021_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2021 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2019_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2019 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">✍</h1>
+<p>这里收集了一些往年笔试 &amp;&amp; 机试的回忆试题供参考，<strong>来源未知</strong></p>
+<p><strong><u>请不要宣传这个页面的存在性</u></strong></p>
+<h2 id="_2">笔试</h2>
+<h3 id="2025">2025 年</h3>
+<p><strong>1- 给出 Sylow 定理的内容，已知群 <span class="arithmatex">\(G\)</span> 的阶为 <span class="arithmatex">\(pq\)</span>（<span class="arithmatex">\(p,q\)</span> 为素数且 <span class="arithmatex">\(p&lt;q\)</span>），证明：如果 <span class="arithmatex">\(p\)</span> 不整除 <span class="arithmatex">\(q-1\)</span>，则 <span class="arithmatex">\(G\)</span> 一定是循环群。</strong></p>
+<details class="quote">
+<summary>Sylow 定理</summary>
+<p>设 <span class="arithmatex">\(G\)</span> 是有限群，<span class="arithmatex">\(p\)</span> 是素数，且 <span class="arithmatex">\(|G| = p^n m\)</span>，其中 <span class="arithmatex">\(n\)</span> 是非负整数，<span class="arithmatex">\(m\)</span> 是与 <span class="arithmatex">\(p\)</span> 互素的正整数。</p>
+<p>在上述假设下，<span class="arithmatex">\(H \subset G\)</span> 称为 <strong>Sylow <span class="arithmatex">\(p-\)</span> 子群</strong>，如果</p>
+<div class="arithmatex">\[
+|H| = p^n.
+\]</div>
+<p>更一般地，<span class="arithmatex">\(|H|\)</span> 如果是 <span class="arithmatex">\(p\)</span> 的幂，就称为 <span class="arithmatex">\(p-\)</span> 子群。</p>
+<p><strong>Sylow 第一定理</strong></p>
+<p>设 <span class="arithmatex">\(k\le n\)</span>，则 <span class="arithmatex">\(G\)</span> 存在 <span class="arithmatex">\(p^k\)</span> 阶子群。特别地，Sylow <span class="arithmatex">\(p\)</span>-子群一定是存在的。</p>
+<p><strong>Sylow 第二定理</strong></p>
+<p><span class="arithmatex">\(G\)</span> 的 <span class="arithmatex">\(p\)</span>-子群包含于某个 Sylow <span class="arithmatex">\(p\)</span>-子群，<span class="arithmatex">\(G\)</span> 的所有 Sylow <span class="arithmatex">\(p\)</span>-子群都共轭。</p>
+<p><strong>Sylow 第三定理</strong></p>
+<p>设 <span class="arithmatex">\(G\)</span> 的 Sylow <span class="arithmatex">\(p\)</span>-子群个数为 <span class="arithmatex">\(s\)</span>，则 <span class="arithmatex">\(s \mid m\)</span>，且 <span class="arithmatex">\(s \equiv 1 \pmod p\)</span>。</p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>2- 给出序同构的定义，已知可数集合 <span class="arithmatex">\(A\)</span> 及其对应偏序关系 <span class="arithmatex">\(\preceq\)</span>，证明存在 <span class="arithmatex">\(B\subseteq \mathbb{Q}\cap(0,1)\)</span>，使得 <span class="arithmatex">\((A,\preceq)\)</span> 与 <span class="arithmatex">\((B,\preceq)\)</span> 序同构。</strong></p>
+<details class="quote">
+<summary>序同构</summary>
+<p>设 <span class="arithmatex">\((P, \le_P)\)</span> 和 <span class="arithmatex">\((Q, \le_Q)\)</span> 是两个偏序集。若存在一个双射 <span class="arithmatex">\(f: P \to Q\)</span>，使得对任意 <span class="arithmatex">\(x, y \in P\)</span>，有</p>
+<div class="arithmatex">\[
+x \le_P y \iff f(x) \le_Q f(y),
+\]</div>
+<p>则称 <span class="arithmatex">\(f\)</span> 是一个 <strong>序同构</strong>，并称 <span class="arithmatex">\(P\)</span> 与 <span class="arithmatex">\(Q\)</span> 是序同构的。</p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>3- 已知两个 <span class="arithmatex">\(n\)</span> 阶方阵 <span class="arithmatex">\(A,B\)</span>，证明: <span class="arithmatex">\(A+B=AB\to AB=BA\)</span>；</strong></p>
+<p><strong>已知两个不同的 <span class="arithmatex">\(n\)</span> 阶方阵 <span class="arithmatex">\(A,B\)</span>，有 <span class="arithmatex">\(A^3=B^3,\;A^2B=B^2A\)</span>，给出使得 <span class="arithmatex">\(A^2+B^2\)</span> 可逆的条件。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>4- 证明：对于任意的 <span class="arithmatex">\(m\)</span> 条边的简单无向图 <span class="arithmatex">\((V,E)\)</span>，都可以将所有的顶点划分至 <span class="arithmatex">\(A,B\)</span> 两个顶点集，这两个顶点集的导出子图的边数都不超过 <span class="arithmatex">\(\dfrac{m}{3}\)</span></strong> 。</p>
+<p><br></p>
+<h3 id="2024">2024 年</h3>
+<p><strong>1- 给出对称群和交错群的定义，证明：对称群 <span class="arithmatex">\(S_{n}\)</span> 与交错群 <span class="arithmatex">\(A_{n+2}\)</span> 的某个子群同构。</strong></p>
+<details class="quote">
+<summary>对称群和交错群</summary>
+<p><strong>对称群</strong> $ S_n $：由 $ n $ 个不同元素的所有 <strong>置换</strong>（双射 $ {1,\dots,n} \to {1,\dots,n} $）组成的群，群运算为置换的复合。</p>
+<p><strong>交错群</strong> $ A_n $：对称群 $ S_n $ 中所有 <strong>偶置换</strong>（可表示为偶数个对换的乘积）构成的子群。</p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>2- 已知 <span class="arithmatex">\(S\)</span> 为无穷集合，给定偏序关系 <span class="arithmatex">\(R\)</span>。求证：在 <span class="arithmatex">\(R\)</span> 下，要么有 <span class="arithmatex">\(S\)</span> 的一个无限子集，元素两两可比；要么有 <span class="arithmatex">\(S\)</span> 的一个无限子集，元素两两不可比。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>3- 已知 <span class="arithmatex">\(f: \mathbb{R}^+ \to \mathbb{R}^+\)</span>,</strong></p>
+<div class="arithmatex">\[
+\lim_{x \to \infty} \frac{f(2x)}{f(x)} = 1
+\]</div>
+<p><strong>证明或反驳：<span class="arithmatex">\(\forall m \in \mathbb{R}^+\)</span>，均有 <span class="arithmatex">\(\lim_{x \to \infty} \frac{f(mx)}{f(x)} = 1\)</span>。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>4- 已知二部图 <span class="arithmatex">\(G=(U, V, E)\)</span>，<span class="arithmatex">\(U\)</span> 中每个点度数为 <span class="arithmatex">\(2024\)</span>。</strong></p>
+<p><strong>现有一个程序，其“输入”是将 <span class="arithmatex">\(V\)</span> 中的点赋予非负整数值。“输出”是按以下规则得到的 <span class="arithmatex">\(U\)</span> 中所有点的权值。<span class="arithmatex">\(\forall u \in U\)</span>，<span class="arithmatex">\(u\)</span> 的权值 <span class="arithmatex">\(= (\)</span> 所有与 <span class="arithmatex">\(u\)</span> 相邻的点权值之和 <span class="arithmatex">\() \bmod 2\)</span>。</strong></p>
+<p><strong>求证：若存在一种输入 <span class="arithmatex">\(I\)</span> 可得到输出 <span class="arithmatex">\(R\)</span>，则必存在一种输入 <span class="arithmatex">\(I'\)</span>，得到输出 <span class="arithmatex">\(R\)</span>，且 <span class="arithmatex">\(I'\)</span> 对应的 <span class="arithmatex">\(V\)</span> 中的点权至少有一半是 <span class="arithmatex">\(0\)</span>。</strong></p>
+<p><br></p>
+<h3 id="2022">2022 年</h3>
+<p><strong>1- 回忆有限生成子群的定义如下：如果 <span class="arithmatex">\(G\)</span> 是一个群，<span class="arithmatex">\(S\)</span> 是 <span class="arithmatex">\(G\)</span> 的一个有限子集，那么由 <span class="arithmatex">\(S\)</span> 中的元素以及他们的逆元经过有限多次运算得到的结果构成的集合是 <span class="arithmatex">\(G\)</span> 的子群，称为由 <span class="arithmatex">\(S\)</span> 生成的子群。现在用 <span class="arithmatex">\(\mathbb{Q}\)</span> 表示有理数的加法群，用 <span class="arithmatex">\(\mathbb{Z}\)</span> 表示整数的加法群。显然，<span class="arithmatex">\(\mathbb{Z}\)</span> 是 <span class="arithmatex">\(\mathbb{Q}\)</span> 的正规子群。那么商群 <span class="arithmatex">\(\mathbb{Q}/\mathbb{Z}\)</span> 的有限生成子群一定是循环群吗？如果是，请给出证明；如果不是，请给出反例。</strong></p>
+<p>（注：<span class="arithmatex">\(N\)</span> 是 <span class="arithmatex">\(G\)</span> 的正规子群是指 <span class="arithmatex">\(N\trianglelefteq G \iff \forall a\in G, aN=Na\)</span>；商群 <span class="arithmatex">\(G/N\)</span> 指：若 <span class="arithmatex">\(N\trianglelefteq G\)</span>，<span class="arithmatex">\(N\)</span> 在 <span class="arithmatex">\(G\)</span> 中的左陪集集合 <span class="arithmatex">\(\{aN \mid a\in G\}\)</span> 与群中的运算构成的群）</p>
+<p><br></p>
+<hr>
+<p><strong>2- 是否存在一个从区间 <span class="arithmatex">\((0,1)\)</span> 到 <span class="arithmatex">\((0,1)\times(0,1)\)</span> 的满射，使得 <span class="arithmatex">\((0,1)\times(0,1)\)</span> 中的每一个值都被取到无穷多次？如果存在，请给出一个具体的例子，并证明其满足要求；如果不存在，证明你的结论。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>3- 简单图 <span class="arithmatex">\(G=(V,E)\)</span> 中，每个顶点 <span class="arithmatex">\(v\in V\)</span> 的度数都恰好为 <span class="arithmatex">\(100\)</span>。求证：存在 <span class="arithmatex">\(E\)</span> 的一个划分 <span class="arithmatex">\(P\)</span>，使得对于任意的 <span class="arithmatex">\(S\in P\)</span>，都有 <span class="arithmatex">\(|S|=10\)</span>，并且存在 <span class="arithmatex">\(u\in V\)</span>，使得 <span class="arithmatex">\(S\)</span> 中所有的边都与 <span class="arithmatex">\(u\)</span> 相关联。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>4- 假设 <span class="arithmatex">\(T\)</span> 是线性空间 <span class="arithmatex">\(V\)</span> 上的线性变换，对于 <span class="arithmatex">\(x\in V\)</span>，以及正整数 <span class="arithmatex">\(m\)</span>，我们有 <span class="arithmatex">\(T^{m-1}x\neq 0\)</span>，<span class="arithmatex">\(T^m x=0\)</span>。求证：<span class="arithmatex">\(x,Tx,\dots,T^{m-1}x\)</span> 线性独立。</strong></p>
+<p><br></p>
+<h3 id="2021">2021 年</h3>
+<p><strong>1- <span class="arithmatex">\(x\to\infty\)</span>，<span class="arithmatex">\(f(x)\)</span> 极限存在且二次可微，<span class="arithmatex">\(f''(x)\)</span> 有界，证明 <span class="arithmatex">\(\displaystyle\lim_{x\to\infty}f'(x)=0\)</span>。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>2- 证明 6 元生成的排列群不含有 10 阶元。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>3- 证明 10 个顶点 40 条边的图含有 <span class="arithmatex">\(K_{3,3}\)</span>。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>4- 已知 <span class="arithmatex">\(A,B,C,D,E,F\)</span> 六个集合，<span class="arithmatex">\(D\)</span> 为 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\)</span> 的映射，<span class="arithmatex">\(E\)</span> 为 <span class="arithmatex">\(D\times C\)</span>，<span class="arithmatex">\(F\)</span> 为 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\times C\)</span> 的映射，证明 <span class="arithmatex">\(E\)</span> 和 <span class="arithmatex">\(F\)</span> 等势。</strong></p>
+<p><br></p>
+<h3 id="2020">2020 年</h3>
+<p><strong>1- 假设 <span class="arithmatex">\(f\)</span> 和 <span class="arithmatex">\(g\)</span> 都是定义在实数集上，值域为实数集的函数，并且 <span class="arithmatex">\(f\)</span> 和 <span class="arithmatex">\(g\)</span> 互为逆函数。已知 <span class="arithmatex">\(f\)</span> 是可微的，请问 <span class="arithmatex">\(g\)</span> 是否一定也可微？如果是，请给出证明；否则，请给出反例。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>2- 对于一个复数 <span class="arithmatex">\(c\)</span>，如果存在整系数多项式 <span class="arithmatex">\(p(x)\)</span> 使得 <span class="arithmatex">\(p(c)=0\)</span>，那么 <span class="arithmatex">\(c\)</span> 就被称为一个代数数；否则，<span class="arithmatex">\(c\)</span> 就被称为一个超越数。令 <span class="arithmatex">\(A\)</span> 为所有代数数构成的集合；令 <span class="arithmatex">\(T\)</span> 为所有超越数构成的集合。试证明：不存在从 <span class="arithmatex">\(T\)</span> 到 <span class="arithmatex">\(A\)</span> 的单射。</strong></p>
+<p><br></p>
+<p><strong>3- 求证：20 阶群必有 5 阶子群。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>4- 假设你有一个 8 位的双向计数器，其计数类型由一个叫做 CTL 的输入来控制。当 CTL 输入为高电平时，该计数器可以从 0 逐步上升计数至 255。当 CTL 输入为低电平时，该计数器可以从 255 逐步下降计数至 0。请使用这个双向计数器，并适当地增加一些其它电路元件，以实现一个三角波计数器：该三角波计数器可以从 0 逐步上升计数至 255，然后又逐步下降计数至 0，然后又逐步上升计数至 255……如此反复循环，永不停止。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>5- 考虑一个简单图 <span class="arithmatex">\(G=(V,E)\)</span>。如果存在一种方法把 <span class="arithmatex">\(V\)</span> 中的顶点染成不超过 <span class="arithmatex">\(k\)</span> 种颜色，使得任意两个相邻顶点都不同色，<span class="arithmatex">\(G\)</span> 称为 <span class="arithmatex">\(k\)</span>-可着色的。如果 <span class="arithmatex">\(G\)</span> 是 <span class="arithmatex">\(k\)</span>-可着色的但不是 <span class="arithmatex">\((k-1)\)</span>-可着色的，<span class="arithmatex">\(G\)</span> 称为严格 <span class="arithmatex">\(k\)</span>-可着色的。求证：如果 <span class="arithmatex">\(G\)</span> 是严格 <span class="arithmatex">\((k+1)\)</span>-可着色的，那么它一定也是 <span class="arithmatex">\(k\)</span>-边连通的。</strong></p>
+<p><br></p>
+<h3 id="2019">2019 年</h3>
+<p><strong>1- 假设集合 <span class="arithmatex">\(A\)</span> 是所有无穷收敛的有理数列的集合，证明：</strong></p>
+<p><strong>(1) 如果</strong></p>
+<div class="arithmatex">\[
+a_{n} \in A, \; \lim_{n\to \infty} a_{n} = x
+\]</div>
+<p><strong>则 <span class="arithmatex">\(x\)</span> 一定是有理数吗？为什么？</strong></p>
+<p><strong>(2) [不确定，可能是问集合 <span class="arithmatex">\(A\)</span> 是否可数]</strong></p>
+<p><br></p>
+<hr>
+<p><strong>2- 二部图 <span class="arithmatex">\(G\)</span> 的顶点集可以划分为两个不相交的子集 <span class="arithmatex">\(U\)</span> 和 <span class="arithmatex">\(V\)</span>，图中的每条边都有一端在 <span class="arithmatex">\(U\)</span> 中，另一端在 <span class="arithmatex">\(V\)</span> 中。<span class="arithmatex">\(U\)</span> 中有 <span class="arithmatex">\(2019\)</span> 个顶点，<span class="arithmatex">\(U\)</span> 中每个顶点的出度至少为 <span class="arithmatex">\(|V|/2\)</span>。证明 <span class="arithmatex">\(V\)</span> 中一定存在一个子集 <span class="arithmatex">\(X\)</span>，<span class="arithmatex">\(|X|\le 10\)</span>，使得 <span class="arithmatex">\(U\)</span> 中每一个顶点都在 <span class="arithmatex">\(X\)</span> 中有一个邻居。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>3- 证明或证伪：8 阶群一定有 4 阶子群。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>4- 构造一个函数 <span class="arithmatex">\(f(x,y)\)</span> 使得：</strong></p>
+<div class="arithmatex">\[
+g(y) = \int_{0}^{1} f(x, y)dx
+\]</div>
+<p><strong>在 <span class="arithmatex">\((0,1)\)</span> 上连续，且对任意的 <span class="arithmatex">\(a\in(0,1)\)</span></strong></p>
+<div class="arithmatex">\[
+h(y) = f(a, y)
+\]</div>
+<p><strong>在 <span class="arithmatex">\((0,1)\)</span> 上不连续。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>5- 用与、或、非门设计一个三人表决器，输入三个信号，输出少数服从多数后的结果。</strong></p>
+<p><br></p>
+<h2 id="_3">机试</h2>
+<h3 id="2025_1">2025 年</h3>
+<p><strong>1- 你有共 <span class="arithmatex">\(n\)</span> 个冰系/火系的士兵，敌方有 <span class="arithmatex">\(m\)</span> 个冰系士兵与 <span class="arithmatex">\(n-m\)</span> 个火系士兵，你的每个士兵都有获胜经验值 <span class="arithmatex">\(A_i\)</span>。现规定：当你的冰系士兵攻击对方的一个火系士兵时，你获得 <span class="arithmatex">\(1.5\times A_i\)</span> 经验值；当你的火系士兵攻击对面的冰系士兵时，你获得 <span class="arithmatex">\(2\times A_i\)</span> 经验值；否则同系士兵间攻击获得 <span class="arithmatex">\(1\times A_i\)</span> 经验值。安排你的每个士兵的攻击对象，给出能获得的经验值的最大值。</strong></p>
+<details class="abstract">
+<summary>输入、输出格式，数据范围</summary>
+<p>第一行输入 <code>n,m</code>。</p>
+<p>接下来 <code>n</code> 行给出你的每个士兵的参数 (两个数，用空格分隔)，第一个数表示士兵类型 (<code>0</code> 为冰系，<code>1</code> 为火系)，第二个数表示 <span class="arithmatex">\(A_i\)</span> 的值。</p>
+<p>输出一个数表示最大可获取的经验值。</p>
+<p>总共有 10 个测试点，每个测试点 10 分，时限 1000ms。</p>
+<p><strong><span class="arithmatex">\(A_i\)</span> 的值都是 10 的倍数。</strong></p>
+</details>
+<p><br></p>
+<hr>
+<p>2- 现有 <span class="arithmatex">\(n\)</span> 层楼，每层楼可选择安装充电站或维修站（每层二选一，整栋楼至少需要安装一个充电站与一个维修站）。每层楼有 <span class="arithmatex">\(P_i\)</span> 个需要充电的机器人与 <span class="arithmatex">\(Q_i\)</span> 个需要维修的机器人（<span class="arithmatex">\(P_i,Q_i\)</span> 都是非负整数），它们会就近到达自己所对应的站点，每个机器人的行动代价为它最少需要上/下楼的层数（可以为 0）。合理安排每层楼安装的站点种类，使得所有机器人的行动代价和最少。</p>
+<p>原题干提醒：<strong>注意 <code>long long</code> 的使用</strong></p>
+<details class="abstract">
+<summary>输入、输出格式，数据范围</summary>
+<p>第一行输入 <code>t</code> 表示测试数据个数。</p>
+<p>接下来对于每个 <code>t</code>，第一行输入 <code>n</code> 表示层数，接下来 <code>n</code> 行每行两个数 <code>pi,qi</code>。</p>
+<p>对于每个 <code>t</code> 输出一个数表示最小行动代价和。</p>
+<p>总共有 20 个测试点，每个测试点 5 分，时限 3000ms。</p>
+<p>存在 30% 的测试点，<span class="arithmatex">\(P_i,Q_i \leq 1\)</span>，其他测试点 <span class="arithmatex">\(P_i,Q_i \leq 10^9\)</span>。</p>
+<p><span class="arithmatex">\(n\)</span> 的大小在测试集中从 <span class="arithmatex">\(\leq10\)</span> 增大至 <span class="arithmatex">\(\leq 500\)</span>， <span class="arithmatex">\(\leq1000\)</span>。</p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>3- 给定一个有向图，点有点权，边有边权，定义一条路径的长度为：经过的边的边权之和 + 经过的点的最大点权。现给定任意两点分别作为起点与终点，求最短路长度。</strong></p>
+<details class="abstract">
+<summary>输入、输出格式，数据范围</summary>
+<p>第一行输入 <code>n</code>, <code>q</code> 分别表示顶点数与接下来询问两个点的最短路的次数。</p>
+<p>接下来一行输入 <code>n</code> 个数记录每个点的点权。</p>
+<p>接下来 <code>n</code> 行每行 <code>n</code> 个数字, 表示权矩阵 <span class="arithmatex">\(A\)</span>, 保证 <code>A[i][i] = 0</code>。</p>
+<p>接下来 <code>q</code> 行每行两个数字 <code>x</code>,<code>y</code> 表示起点与终点。</p>
+<p>对于每个 <code>q</code> 输出一个数表示该询问下最短路长度。</p>
+<p>总共有 10 个测试点, 每个测试点 10 分, 时限 1000ms。</p>
+<p>测试集中 <code>n</code> 全为 500, 询问次数 <code>q</code> 从 <code>1</code> 增大至 <code>100000</code> 。</p>
+<p>点权与边权取值范围为 <span class="arithmatex">\([0,10000]\)</span>。</p>
+<p>部分测试点有特殊性质: </p>
+<p>特殊性质一: 所有的点权值为 0；特殊性质二: 所有的点除了点 <span class="arithmatex">\(n\)</span> 权值为 0</p>
+</details>
+<p><br></p>
+<h3 id="2024_1">2024 年</h3>
+<p><strong>1- 有 <span class="arithmatex">\(n\)</span> 个玩具排成一排（位置不确定），每个玩具有一个"怒气值" <span class="arithmatex">\(a_i\)</span>。你想玩 <span class="arithmatex">\(m\)</span> 次玩具，每次指定想玩的玩具 <span class="arithmatex">\(b_{i}\)</span>，该玩具需要从当前位置移到队头，移动过程中经过的玩具会产生怒气（每次移动产生的怒气值为经过玩具的怒气值之和）。求玩完这 <span class="arithmatex">\(m\)</span> 次玩具后产生的总怒气值之和的最小值。</strong></p>
+<details class="abstract">
+<summary>数据范围</summary>
+<p><span class="arithmatex">\(n, m \leq 10^6\)</span></p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>2- 已知长度为 <span class="arithmatex">\(n=2^k\)</span> 的数列 <span class="arithmatex">\(a\)</span>。定义 k-数列为满足以下两个条件之一的数列：</strong></p>
+<ul>
+<li><span class="arithmatex">\(a_1, a_2, \dots, a_{n/2}\)</span> 均为 <span class="arithmatex">\(k\)</span>，<span class="arithmatex">\(a_{n/2+1}, \dots, a_n\)</span> 为 (k+1)-数列</li>
+<li><span class="arithmatex">\(a_1, a_2, \dots, a_{n/2}\)</span> 为 (k+1)-数列，<span class="arithmatex">\(a_{n/2+1}, \dots, a_n\)</span> 均为 <span class="arithmatex">\(k\)</span></li>
+</ul>
+<p><strong>给定这样的数列 <span class="arithmatex">\(a[1, 2, \cdots, n]\)</span>，每次操作可以将数列中的一个元素改为任意值。求将数列 <span class="arithmatex">\(a\)</span> 变为 1-数列的最小操作次数，并输出字典序最小的目标 1-数列。</strong></p>
+<details class="abstract">
+<summary>数据范围</summary>
+<p><span class="arithmatex">\(n \leq 2\times 10^6\)</span></p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>3- 已知有 <span class="arithmatex">\(n\)</span> 个身高参差不齐的人参与合唱，需要选出 <span class="arithmatex">\(K\)</span> 个人排成合唱队形。合唱队形是满足 <span class="arithmatex">\(T_1 &lt; T_2 &lt; \dots &lt; T_i, T_i &gt; T_{i+1} &gt; \dots &gt; T_K\)</span>（<span class="arithmatex">\(T_i\)</span> 表示身高）的序列（先递增后递减）。合唱队形不一定需要所有人都参与。求不同的合唱队形个数（不同指的是参与对象不同或参与对象的位置不同）。</strong></p>
+<details class="abstract">
+<summary>数据范围</summary>
+<p><span class="arithmatex">\(n \leq 2000\)</span>，身高不一定互不相同</p>
+</details>
+<p><br></p>
+<h3 id="2023">2023 年</h3>
+<p><strong>1- 数轴上从 <span class="arithmatex">\(0\)</span> 出发到 <span class="arithmatex">\(N\)</span>，输入 <span class="arithmatex">\(N\)</span> 和 <span class="arithmatex">\(\alpha_i\;(1\le i\le N)\)</span>，<span class="arithmatex">\(\alpha_i\)</span> 表示经过 <span class="arithmatex">\(i+0.5\)</span> 的次数。输出由 <code>'R'</code> 与 <code>'L'</code> 组成的序列，表示向右或向左移动。</strong></p>
+<details class="abstract">
+<summary>数据范围与部分分</summary>
+<p>对于超出范围的 <span class="arithmatex">\(\alpha_{i}\)</span>，即 <span class="arithmatex">\(i&lt;1\)</span> 或 <span class="arithmatex">\(i&gt;N\)</span> 时，有 <span class="arithmatex">\(\alpha_i=0\)</span>。</p>
+<p>每个测试点上，给出满足 <span class="arithmatex">\(\alpha_i\)</span> 数值的序列给 <span class="arithmatex">\(40\%\)</span> 分数，给出满足 <span class="arithmatex">\(\alpha_i\)</span> 数值并且转向最少的序列给 <span class="arithmatex">\(100\%\)</span> 分数。</p>
+</details>
+<div class="admonition quote">
+<p class="admonition-title"> 有原题：<a href="https://www.luogu.com.cn/problem/P9015">P9015 USACO23JAN Moo Route S - 洛谷</a></p>
+</div>
+<p><br></p>
+<hr>
+<p><strong>2- 在区间 <span class="arithmatex">\([L, R]\)</span> 上，若每个元素出现的次数都 <span class="arithmatex">\(\le (R-L+1)/2\)</span>，则称为平均区间。求最长的平均区间，以及最长平均区间的个数。</strong></p>
+<details class="abstract">
+<summary>数据范围</summary>
+<p>总区间长度的最大值满足：</p>
+<p><span class="arithmatex">\(20\%\)</span>：<span class="arithmatex">\(2\times 10^3\)</span>；</p>
+<p><span class="arithmatex">\(40\%\)</span>：<span class="arithmatex">\(2\times 10^4\)</span>；</p>
+<p><span class="arithmatex">\(60\%\)</span>：<span class="arithmatex">\(10^5\)</span>；</p>
+<p><span class="arithmatex">\(80\%\)</span>：<span class="arithmatex">\(10^6\)</span>；</p>
+<p><span class="arithmatex">\(100\%\)</span>：<span class="arithmatex">\(10^7\)</span>。</p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>3- 在圆上有 <span class="arithmatex">\(3^N\)</span> 个点，每个点有一个点权 <span class="arithmatex">\(a_i\)</span>。记不相交且两点权之和相等的弦称为均衡弦。输出最多的一组均衡弦的个数，并输出其中每条弦的两个端点。</strong></p>
+<details class="abstract">
+<summary>数据范围</summary>
+<p><span class="arithmatex">\(N \in [6, 12]\)</span></p>
+</details>
+<p><br></p>
+<h3 id="2021_1">2021 年</h3>
+<p><strong>1- 甲乙两人在一个 <span class="arithmatex">\(N\)</span> 行 <span class="arithmatex">\(N\)</span> 列的方格棋盘上玩一个小游戏。游戏只有一个棋子，在开始时放在棋盘上的某个格子里。从甲开始，两人轮流移动这个棋子。每次移动只准在垂直向下、水平向左、沿 <span class="arithmatex">\(45^\circ\)</span> 对角线向左下这三个方向中选择一个，但移动的距离不限——只要不出棋盘就可以。</strong></p>
+<p><strong>当棋子走到棋盘左下角的格子时，游戏结束，走出最后一步的一方获胜。在本题中，你将获得棋子最初所在的位置，然后要求你判断甲乙两人中谁会获胜（假设双方都足够聪明，能够选择最好的策略）。</strong></p>
+<details class="abstract">
+<summary>输入、输出格式，数据范围</summary>
+<p>第一行包含一个整数 <span class="arithmatex">\(T\)</span>，表示测试用例的组数。</p>
+<p>接下来 <span class="arithmatex">\(T\)</span> 行，每行代表一个测试用例，包含三个整数 <span class="arithmatex">\(n, x, y\)</span>，其中 <span class="arithmatex">\(n\)</span> 表示棋盘的大小（<span class="arithmatex">\(N=n\)</span>），<span class="arithmatex">\(x\)</span> 表示初始行号，<span class="arithmatex">\(y\)</span> 表示初始列号（均为从 1 开始计数，以棋盘最上方为第一行，以棋盘最左列为第一列）。</p>
+<p>对于每个测试用例，输出一行一个整数：若乙获胜输出 <span class="arithmatex">\(1\)</span>，若甲获胜输出 <span class="arithmatex">\(2\)</span>。</p>
+<p>时限 1s，内存 128 MB</p>
+<p>数据范围：<span class="arithmatex">\(1 \le T \le 100\)</span>，<span class="arithmatex">\(1 \le x, y \le n\)</span>，初始位置 <span class="arithmatex">\((x, y) \neq (n, 1)\)</span>。</p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>2- 有一个图，含有 <span class="arithmatex">\(N\)</span> 个顶点（<span class="arithmatex">\(2 \le N \le 1000\)</span>），分别用 <span class="arithmatex">\(1, 2, \dots, N\)</span> 来标记；含有 <span class="arithmatex">\(M\)</span> 条边（<span class="arithmatex">\(1 \le M \le 1000\)</span>），分别用 <span class="arithmatex">\(1, 2, \dots, M\)</span> 来标记。已知第 <span class="arithmatex">\(i\)</span> 条边的价格为 <span class="arithmatex">\(c_i\)</span>（<span class="arithmatex">\(1 \le c_i \le 1000\)</span>），而它的容量为 <span class="arithmatex">\(f_i\)</span>（<span class="arithmatex">\(1 \le f_i \le 1000\)</span>）。在该图中有两个特别的顶点：源顶点 1 和汇顶点 <span class="arithmatex">\(N\)</span>。（请注意，从源顶点 1 到汇顶点 <span class="arithmatex">\(N\)</span> 一定存在至少一条路径。）</strong></p>
+<p><strong>我们的目标是，找到从源顶点 1 到汇顶点 <span class="arithmatex">\(N\)</span> 的一条简单路径，使得其容量-价格比最高。这里，路径的价格等于路径含有的所有边的价格之和；路径的容量等于路径上所有边的容量的最小值；路径的容量-价格比等于路径的容量除以路径的价格。</strong></p>
+<details class="abstract">
+<summary>输入、输出格式，数据范围</summary>
+<p>第一行含有两个整数 <span class="arithmatex">\(n, m\)</span>，表示顶点的数量和边的数量。顶点的编号为 <span class="arithmatex">\(1\)</span> 到 <span class="arithmatex">\(n\)</span>。</p>
+<p>接下来 <span class="arithmatex">\(m\)</span> 行，每行包含四个整数 <span class="arithmatex">\(x, y, w, c\)</span>，表示一条关联 <span class="arithmatex">\(x, y\)</span> 两个顶点，且价格、容量分别为 <span class="arithmatex">\(w, c\)</span> 的边。所有的边均不区分方向。在同一对顶点之间可能存在多条边。</p>
+<p>保证存在 <span class="arithmatex">\(1\)</span> 到 <span class="arithmatex">\(n\)</span> 的一条简单路径。</p>
+<p>输出一个整数，表示容量-价格比<strong>与 <span class="arithmatex">\(10^6\)</span> 乘积的整数部分</strong>。</p>
+<p>时限 1s，内存 128 MB</p>
+<p>数据范围参考题干，存在一些部分样例，满足 <span class="arithmatex">\(1\le n, m \le 20\)</span> 与 <span class="arithmatex">\(1\le n, m \le 200\)</span></p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>3- 考虑一个 <span class="arithmatex">\(m\)</span> 行 <span class="arithmatex">\(n\)</span> 列的长方形棋盘。以棋盘最上方为第 1 行，以棋盘最左方为第 1 列，建立坐标系。这样，对于棋盘的每一个格子，我们都可以用一对整数 <span class="arithmatex">\((x, y)\)</span> 来表示位置。每一个格子 <span class="arithmatex">\((x, y)\)</span> 只与其上、下、左、右的四个格子 <span class="arithmatex">\((x-1, y)\)</span>、<span class="arithmatex">\((x+1, y)\)</span>、<span class="arithmatex">\((x, y-1)\)</span>、<span class="arithmatex">\((x, y+1)\)</span> 直接相连——如果这些格子存在的话。</strong></p>
+<p><strong>棋盘上已经有一些格子被障碍物所占据，因此从棋盘左上角的 <span class="arithmatex">\((1, 1)\)</span> 通向棋盘右下角的 <span class="arithmatex">\((m, n)\)</span> 的道路有可能已经被堵住了。但是，也有可能还存在着这样的道路。而我们的目标就是添加一些新的障碍物，以保证从 <span class="arithmatex">\((1, 1)\)</span> 绝对无法走到 <span class="arithmatex">\((m, n)\)</span>。当然，我们希望需要添加的障碍物越少越好。</strong></p>
+<details class="abstract">
+<summary>输入、输出格式，数据范围</summary>
+<p>第一行包含两个整数 <span class="arithmatex">\(m, n\)</span>，表示长度和宽度。</p>
+<p>接下来 <span class="arithmatex">\(m\)</span> 行，每行包含 <span class="arithmatex">\(n\)</span> 个字符，表示棋盘。其中 <code>.</code> 表示无障碍物，<code>#</code> 表示有障碍物。保证左上角和右下角一定是 <code>.</code>。</p>
+<p>输出一个整数 <span class="arithmatex">\(k\)</span>，表示至少添加 <span class="arithmatex">\(k\)</span> 个障碍物，就可以切断 <span class="arithmatex">\((1, 1)\)</span> 与 <span class="arithmatex">\((m, n)\)</span> 之间的所有道路。</p>
+<p>时限 3s，内存 256 MB</p>
+<p>数据范围包含三档：<span class="arithmatex">\(3 \le nm \le 20\)</span>，<span class="arithmatex">\(3 \le nm \le 1000\)</span>，<span class="arithmatex">\(3 \le nm \le 1000000\)</span></p>
+</details>
+<p><br></p>
+<h3 id="2019_1">2019 年</h3>
+<p><strong>1- 一个完全由左括号 <code>(</code> 和右括号 <code>)</code> 构成的序列称为括号序列。</strong></p>
+<p><strong>如果一个括号序列可以通过添加 <code>1</code> 和加号变为一个合法表达式，那么该括号序列就被称为合法的，否则称为非法的。例如 <code>(()(()))</code> 是合法的（因为 <code>((1+1)+((1+1)+1))</code> 是一个合法表达式），而 <code>()(()))(</code> 是非法的。对于任何一个合法表达式而言，其中任何一个左括号总有唯一一个右括号与之对应。请判断一个括号序列是否合法。如果合法，对指定的括号找到其对应的括号。括号从 <span class="arithmatex">\(1\)</span> 开始编号。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>2- 一个简单图有 <span class="arithmatex">\(N\;(2\le N\le 10000)\)</span> 个顶点，某些顶点之间有边相连，边共有 <span class="arithmatex">\(N-1\)</span> 条。任意两个顶点之间，有且只有一条不经过重复边的路径把它们连在一起（即图为一棵树）。</strong></p>
+<p><strong>顶点 <span class="arithmatex">\(i\)</span> 有一个权重 <span class="arithmatex">\(e_i\)</span>，所有权重均为非负整数且在 <code>int</code> 范围内。对于任意节点 <span class="arithmatex">\(i\)</span> 和 <span class="arithmatex">\(j\)</span>，定义 <span class="arithmatex">\(A(i,j)\)</span> 为从 <span class="arithmatex">\(i\)</span> 到 <span class="arithmatex">\(j\)</span> 的路径上所有顶点（包括 <span class="arithmatex">\(i\)</span> 和 <span class="arithmatex">\(j\)</span>）的权重相异或得到的数值。</strong></p>
+<p><strong>请根据输入中的查询要求，计算出相应的 <span class="arithmatex">\(A(i,j)\)</span>。</strong></p>
+<p><br></p>
+<hr>
+<p><strong>3- 一个 <span class="arithmatex">\(1000\)</span> 行 <span class="arithmatex">\(1000\)</span> 列的方格表中，画了一条长度小于等于 <span class="arithmatex">\(2000\)</span> 的折线。折线起始于某个格子的中心，结束于另外一个格子的中心。折线的每一部分都与方格的边平行，每当穿过一个格子时一定经过其中心，并且该折线绝对不会与自己相交。</strong></p>
+<p><strong>你无法直接看到这条折线的具体位置。为了找到这条折线的头和尾，你的程序可以提出查询：选择方格表中的任意一个矩形，得知该折线与该矩形的边共有多少个交点。</strong></p>
+<p>（例如在下图中，程序选择了一个 2 行 2 列的矩形，折线与该矩形的边共有 4 个交点。）</p>
+<p><a class="glightbox" data-type="image" data-width="80%" data-height="auto" href="../images/image-20260602030409118.png" data-desc-position="bottom"><img alt="image-20260602030409118" src="../images/image-20260602030409118.png"></a></p>
+<p><strong>请用尽量少的查询，找到折线的头和尾。</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../stylesheets/extra.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
