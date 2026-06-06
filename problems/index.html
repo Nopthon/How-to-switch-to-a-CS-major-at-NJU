@@ -995,10 +995,10 @@ f(X) = \{ f(x) \mid x \in X \}
 <p>两个问题都可以分别举出反例，比如：</p>
 <ul>
 <li>
-<p><span class="arithmatex">\(f(x) = e^{x}\)</span>，时，<span class="arithmatex">\(X \in \mathbb{R}\)</span> 是闭集，但是 <span class="arithmatex">\(f(X) \in (0, +\infty)\)</span> 是开集</p>
+<p><span class="arithmatex">\(f(x) = e^{x}\)</span> 时，<span class="arithmatex">\(X \in \mathbb{R}\)</span> 是闭集，但是 <span class="arithmatex">\(f(X) \in (0, +\infty)\)</span> 是开集</p>
 </li>
 <li>
-<p><span class="arithmatex">\(f(x) = 114514\)</span>，时，<span class="arithmatex">\(f(X) \in \{114514\}\)</span> 是闭集，但是 <span class="arithmatex">\(X\)</span> 可以是任意实数范围内的开集</p>
+<p><span class="arithmatex">\(f(x) = 114514\)</span> 时，<span class="arithmatex">\(f(X) \in \{114514\}\)</span> 是闭集，但是 <span class="arithmatex">\(X\)</span> 可以是任意实数范围内的开集</p>
 </li>
 </ul>
 <p>因此两问都应该证伪</p>
@@ -1024,7 +1024,8 @@ f(X) = \{ f(x) \mid x \in X \}
 <li><span class="arithmatex">\(s_{p} = 1 \text{ or } q\)</span></li>
 <li><span class="arithmatex">\(s_{q} = 1\)</span></li>
 </ul>
-<p>一方面 <span class="arithmatex">\(s_{p} | pq\)</span> 而 <span class="arithmatex">\(p,q\)</span> 互质，所以 <span class="arithmatex">\(s_{p} \in \{1,p,q,pq\}\)</span></p>
+<hr>
+<p>先考虑 Sylow p-子群的个数：已知 <span class="arithmatex">\(s_{p} | pq\)</span> 而 <span class="arithmatex">\(p,q\)</span> 互质，所以 <span class="arithmatex">\(s_{p} \in \{1,p,q,pq\}\)</span></p>
 <ul>
 <li>若 <span class="arithmatex">\(s_{p} = pq\)</span> 或 <span class="arithmatex">\(s_{p} = p\)</span>，则 <span class="arithmatex">\(s_p \equiv 0 \pmod p\)</span>，与 Sylow 第三定理矛盾</li>
 </ul>
@@ -1042,22 +1043,23 @@ f(X) = \{ f(x) \mid x \in X \}
 </ul>
 <p>此时记唯一的 Sylow p-子群与 Sylow q-子群分别为 <span class="arithmatex">\(P, Q\)</span>，容易证明它们都是循环群，且它们的共同子集 <span class="arithmatex">\(P \cap Q = \{e\}\)</span></p>
 <blockquote>
-<p>任何素数阶的群都是循环群，然后使用 Langrange 定理得到 <span class="arithmatex">\(P \cap Q = \{e\}\)</span></p>
+<p>任何素数阶的群都是循环群，然后使用 Lagrange 定理得到 <span class="arithmatex">\(P \cap Q = \{e\}\)</span></p>
 <p>这是离散还是 5 学分时的作业题</p>
 </blockquote>
 <p>循环群 <span class="arithmatex">\(P\)</span> 中包含单位元 <span class="arithmatex">\(e\)</span> 和 <span class="arithmatex">\(p-1\)</span> 个阶为 <span class="arithmatex">\(p\)</span> 的元素，对 <span class="arithmatex">\(Q\)</span> 同理</p>
 <p>因此阶数为 <span class="arithmatex">\(1,p,q\)</span> 的元素总数为 <span class="arithmatex">\(1 + (p-1) + (q-1) = p+q-1\)</span>，进一步的，阶为 <span class="arithmatex">\(pq\)</span> 的元素个数为 <span class="arithmatex">\(pq - (p+q-1) = (p-1)(q-1) &gt; 0\)</span></p>
 <p><span class="arithmatex">\(G\)</span> 的元素最大阶为 <span class="arithmatex">\(d=pq\)</span>，此时 <span class="arithmatex">\(dn = pq(p-1)(q-1)\)</span>，显然 <span class="arithmatex">\(pq \mid dn\)</span></p>
 <blockquote>
-<p>（直到这一步，都和去年 T1 的过程几乎一样）</p>
+<p><strong>直到这一步，都和去年 T1 的过程几乎一样</strong></p>
+<p><strong>往年卷居然作用这么大</strong></p>
 </blockquote>
 <ul>
 <li><span class="arithmatex">\(s_{p} = q, s_{q} = 1\)</span></li>
 </ul>
 <p>同理，唯一的 Sylow q-循环群 <span class="arithmatex">\(Q\)</span> 中包含单位元 <span class="arithmatex">\(e\)</span> 和 <span class="arithmatex">\(q-1\)</span> 个阶为 <span class="arithmatex">\(q\)</span> 的元素</p>
-<p>我们知道任意两个 Sylow p-子群的交集也只能是 <span class="arithmatex">\(\{e\}\)</span>（使用 Langrange 定理），总共有 <span class="arithmatex">\(q\)</span> 个 Sylow-p 子群，因此阶为 <span class="arithmatex">\(p\)</span> 的元素总共有 <span class="arithmatex">\(q(p-1)\)</span> 个</p>
+<p>我们知道任意两个 Sylow p-子群的交集也只能是 <span class="arithmatex">\(\{e\}\)</span>（使用 Lagrange 定理），总共有 <span class="arithmatex">\(q\)</span> 个 Sylow-p 子群，因此阶为 <span class="arithmatex">\(p\)</span> 的元素总共有 <span class="arithmatex">\(q(p-1)\)</span> 个</p>
 <p>因此阶数为 <span class="arithmatex">\(1,p,q\)</span> 的元素总数为 <span class="arithmatex">\(1 + q(p-1) + (q-1) = pq = |G|\)</span>，这意味着不存在阶为 <span class="arithmatex">\(pq\)</span> 的元素</p>
-<p><span class="arithmatex">\(G\)</span> 的元素最大阶为 <span class="arithmatex">\(d=q\)</span>，此时 <span class="arithmatex">\(dn = q(q-1)\)</span></p>
+<p><span class="arithmatex">\(G\)</span> 的元素最大阶为 <span class="arithmatex">\(d=q\)</span>（已经令 <span class="arithmatex">\(p &lt; q\)</span>），此时 <span class="arithmatex">\(dn = q(q-1)\)</span></p>
 <p>Sylow 第三定理指出 <span class="arithmatex">\(s_q \equiv 1 \pmod p\)</span>，因此 <span class="arithmatex">\(p \mid q-1\)</span>，则 <span class="arithmatex">\(pq \mid q(q-1) = dn\)</span></p>
 <p>以上我们证明了 <span class="arithmatex">\(pq \mid dn\)</span> 一定成立，本题证毕</p>
 </details>
@@ -1078,29 +1080,29 @@ f(X) = \{ f(x) \mid x \in X \}
 <ul>
 <li><span class="arithmatex">\(u, v\)</span> 同色，<span class="arithmatex">\(w\)</span> 与 <span class="arithmatex">\(u, v\)</span> 同色</li>
 </ul>
-<p>一次操作导致两种颜色的点的个数差变化为 4</p>
+<p>一次操作导致 <span class="arithmatex">\(S\)</span> 的绝对值变化为 4</p>
 <blockquote>
-<p>比如 <span class="arithmatex">\((u, v, w) = (1, 1, 1) \to (-1)\)</span></p>
+<p>比如 <span class="arithmatex">\((u, v, w) = (1, 1, 1) \xrightarrow{\text{delete}} (-1)\)</span></p>
 </blockquote>
 <ul>
 <li><span class="arithmatex">\(u, v\)</span> 同色，<span class="arithmatex">\(w\)</span> 与 <span class="arithmatex">\(u, v\)</span> 异色</li>
 </ul>
-<p>一次操作导致两种颜色的点的个数差变化为 0</p>
+<p>一次操作导致 <span class="arithmatex">\(S\)</span> 的绝对值变化为 0</p>
 <blockquote>
-<p>比如 <span class="arithmatex">\((u, v, w) = (1, 1, -1) \to (1)\)</span></p>
+<p>比如 <span class="arithmatex">\((u, v, w) = (1, 1, -1) \xrightarrow{\text{delete}} (1)\)</span></p>
 </blockquote>
 <ul>
 <li><span class="arithmatex">\(u, v\)</span> 异色</li>
 </ul>
-<p>一次操作导致两种颜色的点的个数差变化为 0</p>
+<p>一次操作导致 <span class="arithmatex">\(S\)</span> 的绝对值变化为 0</p>
 <blockquote>
-<p>比如 <span class="arithmatex">\((u, v, w) = (1, -1, 1) \to (1)\)</span></p>
+<p>比如 <span class="arithmatex">\((u, v, w) = (1, -1, 1) \xrightarrow{\text{delete}} (1)\)</span></p>
 </blockquote>
 <p>我们发现 <span class="arithmatex">\(S \bmod 4\)</span> 始终不变。对于本题初始情况下，<span class="arithmatex">\(S = 1\)</span>，则最终还剩下 <span class="arithmatex">\(5\)</span> 个顶点的时候，也有：</p>
 <div class="arithmatex">\[
-\text{cnt}(black) - \text{cnt}(white) \equiv 1 \pmod 4
+S = \text{count}(black) - \text{count}(white) \equiv 1 \pmod 4
 \]</div>
-<p>枚举所有的可能性：</p>
+<p>枚举所有的可能性，总共有三种可能：</p>
 <ul>
 <li>5 黑 0 白</li>
 <li>3 黑 2 白</li>
@@ -1129,7 +1131,7 @@ f(X) = \{ f(x) \mid x \in X \}
 \]</div>
 <p>我们取 <span class="arithmatex">\(k \ne i\)</span>，因为 <span class="arithmatex">\(\forall k \ne j,\; A^{-1}_{ik} = 0\)</span>，则最终化简为 <span class="arithmatex">\(A^{-1}_{ij}A_{jk} = 0\)</span>，而 <span class="arithmatex">\(A^{-1}_{ij} \ne 0\)</span>，则 <span class="arithmatex">\(A_{jk} = 0\)</span>，这与 <span class="arithmatex">\(A\)</span> 的元素全为无理数矛盾</p>
 <blockquote>
-<p>如果 <span class="arithmatex">\(A^{-1}\)</span> 的每一行都至少有 2 个非零元素，那么会得到多个项的和为 <span class="arithmatex">\(0\)</span>（每个子项就不必为 <span class="arithmatex">\(0\)</span>），就不会出现以上的矛盾；否则，我们最后只会得到一个乘积项为 <span class="arithmatex">\(0\)</span>，那么就要求乘积项内至少有一个元素为 <span class="arithmatex">\(0\)</span>，进而导出矛盾</p>
+<p>如果 <span class="arithmatex">\(A^{-1}\)</span> 的每一行都至少有 2 个非零元素，那么会得到多个子乘积项的和为 <span class="arithmatex">\(0\)</span>（每个子项就不必为 <span class="arithmatex">\(0\)</span>），就不会出现以上的矛盾；否则，我们最后只会得到一个乘积项为 <span class="arithmatex">\(0\)</span>，那么就要求乘积项内至少有一个元素为 <span class="arithmatex">\(0\)</span>，进而导出矛盾</p>
 </blockquote>
 <p>因此反设不成立，<span class="arithmatex">\(A^{-1}\)</span> 的每一行都至少有 2 个非零元素（同理对每一列也成立）</p>
 <p>以上，<span class="arithmatex">\(A^{-1}\)</span> 的每一行（每一列）都至少有 2 个非零元素，那么总的非零元素不少于 <span class="arithmatex">\(2\times 99 = 198\)</span> 个</p>
