@@ -998,7 +998,7 @@ f(X) = \{ f(x) \mid x \in X \}
 <p><span class="arithmatex">\(f(x) = e^{x}\)</span> 时，<span class="arithmatex">\(X \in \mathbb{R}\)</span> 是闭集，但是 <span class="arithmatex">\(f(X) \in (0, +\infty)\)</span> 是开集</p>
 </li>
 <li>
-<p><span class="arithmatex">\(f(x) = 114514\)</span> 时，<span class="arithmatex">\(f(X) \in \{114514\}\)</span> 是闭集，但是 <span class="arithmatex">\(X\)</span> 可以是任意实数范围内的开集</p>
+<p><span class="arithmatex">\(f(x) = 114514\)</span> 时，<span class="arithmatex">\(f(X) \in \{114514\}\)</span> 是闭集，但是 <span class="arithmatex">\(X\)</span> 可以是任意实数范围内的开集（比如 <span class="arithmatex">\(X = (0,1)\)</span>）</p>
 </li>
 </ul>
 <p>因此两问都应该证伪</p>
@@ -1154,6 +1154,34 @@ S = \text{count}(black) - \text{count}(white) \equiv 1 \pmod 4
 <p><strong>Sylow 第三定理</strong></p>
 <p>设 <span class="arithmatex">\(G\)</span> 的 Sylow <span class="arithmatex">\(p\)</span>-子群个数为 <span class="arithmatex">\(s\)</span>，则 <span class="arithmatex">\(s \mid m\)</span>，且 <span class="arithmatex">\(s \equiv 1 \pmod p\)</span>。</p>
 </details>
+<details class="abstract">
+<summary>仅供参考的解答</summary>
+<p>首先证明 Sylow p-子群和 Sylow q-子群的个数 <span class="arithmatex">\(s_{p}, s_{q}\)</span> 一定满足：</p>
+<div class="arithmatex">\[
+s_{p} = s_{q} = 1 
+\]</div>
+<p>考虑 Sylow p-子群的个数：已知 <span class="arithmatex">\(s_{p} | pq\)</span> 而 <span class="arithmatex">\(p,q\)</span> 互质，所以 <span class="arithmatex">\(s_{p} \in \{1,p,q,pq\}\)</span></p>
+<ul>
+<li>若 <span class="arithmatex">\(s_{p} = pq\)</span> 或 <span class="arithmatex">\(s_{p} = p\)</span>，则 <span class="arithmatex">\(s_p \equiv 0 \pmod p\)</span>，与 Sylow 第三定理矛盾</li>
+<li>若 <span class="arithmatex">\(s_{p} = q\)</span> 则 <span class="arithmatex">\(q \equiv 1 \pmod p\)</span>，与 <span class="arithmatex">\(p \nmid (q-1)\)</span> 的题干条件矛盾</li>
+</ul>
+<p>所以 <span class="arithmatex">\(s_{p} = 1\)</span></p>
+<p>同理 <span class="arithmatex">\(s_{q} \in \{1,p,q,pq\}\)</span></p>
+<ul>
+<li>若 <span class="arithmatex">\(s_{q} = pq\)</span> 或 <span class="arithmatex">\(s_{q} = q\)</span>，则 <span class="arithmatex">\(s_q \equiv 0 \pmod q\)</span>，与 Sylow 第三定理矛盾</li>
+<li>若 <span class="arithmatex">\(s_{q} = p\)</span> 则 <span class="arithmatex">\(p \equiv 1 \pmod q\)</span>，与 <span class="arithmatex">\(p &lt; q\)</span> 矛盾</li>
+</ul>
+<p>所以 <span class="arithmatex">\(s_{q} = 1\)</span></p>
+<hr>
+<p>接下来，记唯一的 Sylow p-子群与 Sylow q-子群分别为 <span class="arithmatex">\(P, Q\)</span>，容易证明它们都是循环群，且它们的共同子集 <span class="arithmatex">\(P \cap Q = \{e\}\)</span></p>
+<blockquote>
+<p>任何素数阶的群都是循环群，然后使用 Lagrange 定理得到 <span class="arithmatex">\(P \cap Q = \{e\}\)</span></p>
+</blockquote>
+<p>循环群 <span class="arithmatex">\(P\)</span> 中包含单位元 <span class="arithmatex">\(e\)</span> 和 <span class="arithmatex">\(p-1\)</span> 个阶为 <span class="arithmatex">\(p\)</span> 的元素，对 <span class="arithmatex">\(Q\)</span> 同理</p>
+<p>因此阶数为 <span class="arithmatex">\(1,p,q\)</span> 的元素总数为 <span class="arithmatex">\(1 + (p-1) + (q-1) = p+q-1\)</span></p>
+<p>而 <span class="arithmatex">\(|G| - (p+q-1) = (p-1)(q-1) &gt; 0\)</span>，这意味着除了阶数为 <span class="arithmatex">\(1,p,q\)</span> 的元素以外，还存在多的元素，因此这些元素的阶只能为 <span class="arithmatex">\(pq\)</span></p>
+<p>因此 <span class="arithmatex">\(G\)</span> 中一定存在阶为 <span class="arithmatex">\(pq\)</span> 的元素，<span class="arithmatex">\(G\)</span> 是循环群</p>
+</details>
 <p><br></p>
 <hr>
 <p><strong>2- 给出序同构的定义，已知可数集合 <span class="arithmatex">\(A\)</span> 及其对应偏序关系 <span class="arithmatex">\(\preceq\)</span>，证明存在 <span class="arithmatex">\(B\subseteq \mathbb{Q}\cap(0,1)\)</span>，使得 <span class="arithmatex">\((A,\preceq)\)</span> 与 <span class="arithmatex">\((B,\preceq)\)</span> 序同构。</strong></p>
@@ -1165,13 +1193,53 @@ x \le_P y \iff f(x) \le_Q f(y),
 \]</div>
 <p>则称 <span class="arithmatex">\(f\)</span> 是一个 <strong>序同构</strong>，并称 <span class="arithmatex">\(P\)</span> 与 <span class="arithmatex">\(Q\)</span> 是序同构的。</p>
 </details>
+<details class="abstract">
+<summary>仅供参考的解答</summary>
+<p><span class="arithmatex">\((A, \preceq)\)</span> 是可数全序集，因此存在一种 <span class="arithmatex">\(A\)</span> 的枚举使得 <span class="arithmatex">\(A = \{a_1, a_2, \cdots\}\)</span></p>
+<p>对于函数 <span class="arithmatex">\(f : A \to \mathbb{Q} \cap (0, 1)\)</span>，定义 <span class="arithmatex">\(f(a_1) = p\)</span>，这里 <span class="arithmatex">\(p \in \mathbb{Q} \cap (0, 1)\)</span> 是一个常数，为了方便可以取 <span class="arithmatex">\(\frac{1}{2}\)</span> 或其他合法值</p>
+<p>假定 <span class="arithmatex">\(A_{n-1} = \{a_1, \cdots, a_{n-1}\}\)</span> 已经映射到了 <span class="arithmatex">\(B_{n-1} = \{f(a_1), \cdots, f(a_{n-1})\}\)</span> 并且具有单射性与保序性，现在对于 <span class="arithmatex">\(a_n\)</span>，我们可以将 <span class="arithmatex">\(A_{n-1}\)</span> 分为两部分：</p>
+<div class="arithmatex">\[
+L = \{a_i \in S_{n-1} \mid a_i \preceq a_n\}, \quad R = \{a_i \in S_{n-1} \mid a_n \preceq a_i\}
+\]</div>
+<p>不妨取 <span class="arithmatex">\(f(L) = \max\{f(a_i) \mid a_i \in L\}, \ f(R) = \min\{f(a_i) \mid a_i \in R\}\)</span>，取 <span class="arithmatex">\(f(a_n) \in (f(L), f(R)) \cap \mathbb{Q}\)</span>，此时的 <span class="arithmatex">\(f(a_n)\)</span> 依旧满足单射性与保序性，而存在性由有理数在实数域的稠密性决定（即在任意两个有理数之间存在无限多个有理数）</p>
+<p>因此这样的 <span class="arithmatex">\(f\)</span> 的构造是成立的，也就存在对应的序同构</p>
+<blockquote>
+<p>解答写的不太像人类，还是问 LLMs 吧</p>
+</blockquote>
+</details>
 <p><br></p>
 <hr>
 <p><strong>3- 已知两个 <span class="arithmatex">\(n\)</span> 阶方阵 <span class="arithmatex">\(A,B\)</span>，证明: <span class="arithmatex">\(A+B=AB\to AB=BA\)</span>；</strong></p>
 <p><strong>已知两个不同的 <span class="arithmatex">\(n\)</span> 阶方阵 <span class="arithmatex">\(A,B\)</span>，有 <span class="arithmatex">\(A^3=B^3,\;A^2B=B^2A\)</span>，给出使得 <span class="arithmatex">\(A^2+B^2\)</span> 可逆的条件。</strong></p>
+<details class="abstract">
+<summary>仅供参考的解答</summary>
+<p>(1) <span class="arithmatex">\(A + B = AB \rightarrow AB - A - B + E = E \rightarrow (A - E)(B - E) = E\)</span>，因此 <span class="arithmatex">\(A - E, B - E\)</span> 互为逆矩阵</p>
+<p><span class="arithmatex">\(\therefore (B - E)(A - E) = E \rightarrow BA = A + B = AB\)</span></p>
+<p>(2) 先证明：对同阶方阵 <span class="arithmatex">\(A, B\)</span> 有：<span class="arithmatex">\(AB = O, B \neq O \rightarrow A\)</span> 一定不可逆</p>
+<p>反设 <span class="arithmatex">\(A\)</span> 可逆，那么 <span class="arithmatex">\(A^{-1}AB = EB = O \rightarrow B = O\)</span>，与已知条件矛盾，所以 <span class="arithmatex">\(A\)</span> 一定不可逆，证毕</p>
+<p>对于本题，构造 <span class="arithmatex">\((A^2 + B^2)(A - B) = A^3 - B^3 - A^2B + B^2A = O\)</span>，题干条件</p>
+<p><span class="arithmatex">\(A \neq B \rightarrow A - B \neq O\)</span>，由之前的证明可知 <span class="arithmatex">\(A^2 + B^2\)</span> 一定不可逆（也就是不存在使得 <span class="arithmatex">\(A^2 + B^2\)</span> 可逆的条件）</p>
+<blockquote>
+<p>原题写的就是“给出使得 <span class="arithmatex">\(A^2+B^2\)</span> 可逆的条件”</p>
+</blockquote>
+</details>
 <p><br></p>
 <hr>
 <p><strong>4- 证明：对于任意的 <span class="arithmatex">\(m\)</span> 条边的简单无向图 <span class="arithmatex">\((V,E)\)</span>，都可以将所有的顶点划分至 <span class="arithmatex">\(A,B\)</span> 两个顶点集，这两个顶点集的导出子图的边数都不超过 <span class="arithmatex">\(\dfrac{m}{3}\)</span></strong> 。</p>
+<details class="abstract">
+<summary>仅供参考的解答</summary>
+<p>不妨反设：对于任意一种划分 <span class="arithmatex">\(K\)</span>，至少存在一个顶点集，其导出子图边数 <span class="arithmatex">\(&gt; \frac{m}{3}\)</span></p>
+<p>特殊化 <span class="arithmatex">\(K\)</span> 为“边的极大划分”，即这种划分方式跨越（隔断）的边数最多，不失一般性地假设</p>
+<p><span class="arithmatex">\(e(A) &gt; \frac{m}{3}\)</span></p>
+<p>容易得到对于 <span class="arithmatex">\(A\)</span> 中的任意顶点 <span class="arithmatex">\(v\)</span> 都有：<span class="arithmatex">\(d_A(v) \leq d_B(v)\)</span>（即：该顶点在子图 <span class="arithmatex">\(A\)</span> 的度数不大于在子图 <span class="arithmatex">\(B\)</span> 的度数），否则 <span class="arithmatex">\(K\)</span> 不是“边的极大划分”</p>
+<blockquote>
+<p>可以想象一下将顶点 <span class="arithmatex">\(v\)</span> 从 <span class="arithmatex">\(A\)</span> 移到 <span class="arithmatex">\(B\)</span> 时边的变化情况，如果 <span class="arithmatex">\(d_A(v) &gt; d_B(v)\)</span>，那么对 <span class="arithmatex">\(v\)</span> 的这一操作会导致被隔断的边数增加，因此 <span class="arithmatex">\(K\)</span> 不是“边的极大划分”</p>
+</blockquote>
+<p>对所有 <span class="arithmatex">\(v\)</span> 求和有 <span class="arithmatex">\(\sum_{v \in A} d_A(v) = 2e(A) \leq \sum_{v \in A} d_B(v) = e(A, B)\)</span>（握手定理）</p>
+<p>也就是说 <span class="arithmatex">\(2e(A) \leq e(A, B)\)</span>，即被隔断的边数不小于 <span class="arithmatex">\(A\)</span> 的生成子图的边数的两倍</p>
+<p>总边数 <span class="arithmatex">\(m = e(A) + e(B) + e(A, B) \geq 3e(A) + e(B) \geq 3e(A) &gt; 3 \times \frac{m}{3} = m\)</span>，得到了 <span class="arithmatex">\(m &gt; m\)</span> 的矛盾结论</p>
+<p>因此反设不成立，原命题成立</p>
+</details>
 <p><br></p>
 <h3 id="2024">2024 年</h3>
 <p><strong>1- 给出对称群和交错群的定义，证明：对称群 <span class="arithmatex">\(S_{n}\)</span> 与交错群 <span class="arithmatex">\(A_{n+2}\)</span> 的某个子群同构。</strong></p>
