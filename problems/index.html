@@ -596,6 +596,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#2025" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -785,6 +796,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#2025" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -949,8 +971,49 @@
 
 <h1 id="_1">✍</h1>
 <p>这里收集了一些往年笔试 &amp;&amp; 机试的回忆试题（不含答案）供参考，<strong>来源<u>未知</u></strong></p>
-<p><strong><u>请不要宣传这个页面的存在性</u></strong>（虽然 Github 能搜得到）</p>
+<p><strong><u>请不要宣传这个页面的存在性</u></strong>（虽然 Github 能搜得到，搜索引擎也能搜得到😭）</p>
 <h2 id="_2">笔试</h2>
+<h3 id="2026">2026 年</h3>
+<p><strong>1- 给出闭集的定义，设 $ f: \mathbb{R} \to \mathbb{R} $ 为连续函数。对于任意子集 $ X \subseteq \mathbb{R} $，记</strong>
+$$
+f(X) = { f(x) \mid x \in X }
+$$</p>
+<ol>
+<li><strong>若 $ X \subseteq \mathbb{R} $ 是闭集，是否必有 $ f(X) $ 是闭集？证明或举出反例。</strong></li>
+<li><strong>若 $ f(X) \subseteq \mathbb{R} $ 是闭集，是否必有 $ X $ 是闭集？证明或举出反例。</strong></li>
+</ol>
+<details class="quote">
+<summary>闭集</summary>
+<p>如果集合 <span class="arithmatex">\(A\)</span> 的补集为开集，则 <span class="arithmatex">\(A\)</span> 是一个闭集（即：闭集是一个包含所有其极限点的集合）</p>
+<p>一个集合是开集，当且仅当它的每一点都是内点，等价地说，对集合中任意一点，都存在一个完全包含于该集合内的邻域（称之为开球）。</p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>2- 给出 Sylow 第三定理的内容，已知群 <span class="arithmatex">\(G\)</span> 的阶为 <span class="arithmatex">\(pq\)</span>（<span class="arithmatex">\(p,q\)</span> 为互异素数），元素的最大阶为 <span class="arithmatex">\(d\)</span>，<span class="arithmatex">\(d\)</span> 阶元素的个数为 <span class="arithmatex">\(n\)</span>。证明：<span class="arithmatex">\(pq \mid dn\)</span>。</strong></p>
+<details class="quote">
+<summary>Sylow 第三定理</summary>
+<p>设 <span class="arithmatex">\(G\)</span> 是有限群，<span class="arithmatex">\(p\)</span> 是素数，且 <span class="arithmatex">\(|G| = p^n m\)</span>，其中 <span class="arithmatex">\(n\)</span> 是非负整数，<span class="arithmatex">\(m\)</span> 是与 <span class="arithmatex">\(p\)</span> 互素的正整数。</p>
+<p>在上述假设下，<span class="arithmatex">\(H \subset G\)</span> 称为 <strong>Sylow <span class="arithmatex">\(p\)</span>- 子群</strong>，如果</p>
+<div class="arithmatex">\[
+|H| = p^n.
+\]</div>
+<p><strong>Sylow 第三定理</strong></p>
+<p>设 <span class="arithmatex">\(G\)</span> 的 Sylow <span class="arithmatex">\(p\)</span>-子群个数为 <span class="arithmatex">\(s\)</span>，则 <span class="arithmatex">\(s \mid m\)</span>，且 <span class="arithmatex">\(s \equiv 1 \pmod p\)</span>。</p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>3- 初始有一张无向完全图 <span class="arithmatex">\(K_{203}\)</span>，其中 <span class="arithmatex">\(101\)</span> 个顶点为白色，<span class="arithmatex">\(102\)</span> 个顶点为黑色。</strong> </p>
+<p><strong>每次操作如下：任选一条边 <span class="arithmatex">\((u,v)\)</span>，并选取一个同时与 <span class="arithmatex">\(u,v\)</span> 相邻的公共邻点 <span class="arithmatex">\(w\)</span>。接下来删除顶点 <span class="arithmatex">\(u,v\)</span>，然后：</strong>  </p>
+<ul>
+<li><strong>若 <span class="arithmatex">\(u,v\)</span> 同色，则将 <span class="arithmatex">\(w\)</span> 的颜色翻转；</strong>  </li>
+<li><strong>若 <span class="arithmatex">\(u,v\)</span> 异色，则 <span class="arithmatex">\(w\)</span> 的颜色保持不变。</strong>  </li>
+</ul>
+<p><strong>重复上述操作，直到无法继续，最终剩下 <span class="arithmatex">\(5\)</span> 个顶点</strong></p>
+<p><strong>问：剩下的 <span class="arithmatex">\(5\)</span> 个顶点中是否一定存在黑点 / 白点？剩下的 <span class="arithmatex">\(5\)</span> 个顶点中是否可能存在黑点 / 白点？</strong></p>
+<p><br></p>
+<hr>
+<p><strong>4- 已知矩阵 <span class="arithmatex">\(A\)</span> 是 <span class="arithmatex">\(99\times 99\)</span> 的可逆无理数矩阵（所有元素都是无理数），证明：<span class="arithmatex">\(A^{-1}\)</span> 至少有 <span class="arithmatex">\(198\)</span> 个非零元素</strong></p>
+<p><br></p>
 <h3 id="2025">2025 年</h3>
 <p><strong>1- 给出 Sylow 定理的内容，已知群 <span class="arithmatex">\(G\)</span> 的阶为 <span class="arithmatex">\(pq\)</span>（<span class="arithmatex">\(p,q\)</span> 为素数且 <span class="arithmatex">\(p&lt;q\)</span>），证明：如果 <span class="arithmatex">\(p\)</span> 不整除 <span class="arithmatex">\(q-1\)</span>，则 <span class="arithmatex">\(G\)</span> 一定是循环群。</strong></p>
 <details class="quote">
@@ -1057,7 +1120,7 @@ x \le_P y \iff f(x) \le_Q f(y),
 <p><strong>5- 考虑一个简单图 <span class="arithmatex">\(G=(V,E)\)</span>。如果存在一种方法把 <span class="arithmatex">\(V\)</span> 中的顶点染成不超过 <span class="arithmatex">\(k\)</span> 种颜色，使得任意两个相邻顶点都不同色，<span class="arithmatex">\(G\)</span> 称为 <span class="arithmatex">\(k\)</span>-可着色的。如果 <span class="arithmatex">\(G\)</span> 是 <span class="arithmatex">\(k\)</span>-可着色的但不是 <span class="arithmatex">\((k-1)\)</span>-可着色的，<span class="arithmatex">\(G\)</span> 称为严格 <span class="arithmatex">\(k\)</span>-可着色的。求证：如果 <span class="arithmatex">\(G\)</span> 是严格 <span class="arithmatex">\((k+1)\)</span>-可着色的，那么它一定也是 <span class="arithmatex">\(k\)</span>-边连通的。</strong></p>
 <p><br></p>
 <h3 id="2019">2019 年</h3>
-<p><strong>1- 假设集合 <span class="arithmatex">\(A\)</span> 是所有无穷收敛的有理数列的集合，证明：</strong></p>
+<p><strong>1- 假设集合 <span class="arithmatex">\(A\)</span> 是所有无穷收敛的有理数列的集合：</strong></p>
 <p><strong>(1) 如果</strong></p>
 <div class="arithmatex">\[
 a_{n} \in A, \; \lim_{n\to \infty} a_{n} = x
