@@ -690,6 +690,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#2026_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#2025_1" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -738,6 +749,34 @@
     <span class="md-ellipsis">
       
         2019 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        面试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="面试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2026_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026 年
       
     </span>
   </a>
@@ -890,6 +929,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#2026_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#2025_1" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -949,6 +999,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        面试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="面试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2026_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026 年
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -975,15 +1053,12 @@
 <h2 id="_2">笔试</h2>
 <h3 id="2026">2026 年</h3>
 <details class="warning">
-<summary>尚未完成回忆版题目的正确性验证，以下内容仅供参考</summary>
+<summary>修正了 T1 T3 的题干错误并进行了解答修正</summary>
 </details>
-<p><strong>1- 给出闭集的定义，设 <span class="arithmatex">\(f: \mathbb{R} \to \mathbb{R}\)</span> 为连续函数。对于任意子集 <span class="arithmatex">\(X \subseteq \mathbb{R}\)</span>，记</strong></p>
-<div class="arithmatex">\[
-f(X) = \{ f(x) \mid x \in X \}
-\]</div>
+<p><strong>1- 给出闭集的定义，设 <span class="arithmatex">\(f: \mathbb{R} \to \mathbb{R}\)</span> 为连续函数。</strong></p>
 <ol>
-<li><strong>若 $ X \subseteq \mathbb{R} $ 是闭集，是否必有 $ f(X) $ 是闭集？证明或举出反例。</strong></li>
-<li><strong>若 $ f(X) \subseteq \mathbb{R} $ 是闭集，是否必有 $ X $ 是闭集？证明或举出反例。</strong></li>
+<li><strong>若 $ X \subseteq \mathbb{R} $ 是闭集，是否必有 $ \lbrace  f(x) \mid x \in X \rbrace  $ 是闭集？证明或举出反例。</strong></li>
+<li><strong>若 $ Y \subseteq \mathbb{R} $ 是闭集，是否必有 $ \lbrace x \mid f(x) \in Y\rbrace  $ 是闭集？证明或举出反例。</strong></li>
 </ol>
 <details class="quote">
 <summary>闭集</summary>
@@ -992,16 +1067,15 @@ f(X) = \{ f(x) \mid x \in X \}
 </details>
 <details class="abstract">
 <summary>仅供参考的解答</summary>
-<p>两个问题都可以分别举出反例，比如：</p>
+<p><strong>第一问可以举出反例：</strong></p>
 <ul>
-<li>
-<p><span class="arithmatex">\(f(x) = e^{x}\)</span> 时，<span class="arithmatex">\(X \in \mathbb{R}\)</span> 是闭集，但是 <span class="arithmatex">\(f(X) \in (0, +\infty)\)</span> 是开集</p>
-</li>
-<li>
-<p><span class="arithmatex">\(f(x) = 114514\)</span> 时，<span class="arithmatex">\(f(X) \in \{114514\}\)</span> 是闭集，但是 <span class="arithmatex">\(X\)</span> 可以是任意实数范围内的开集（比如 <span class="arithmatex">\(X = (0,1)\)</span>）</p>
-</li>
+<li><span class="arithmatex">\(f(x) = e^{x}\)</span> 时，<span class="arithmatex">\(X \in \mathbb{R}\)</span> 是闭集，但是 <span class="arithmatex">\(f(X) \in (0, +\infty)\)</span> 是开集</li>
 </ul>
-<p>因此两问都应该证伪</p>
+<p><strong>第二问可以给出证明：</strong></p>
+<p>令 <span class="arithmatex">\(A = \lbrace x \mid f(x) \in Y\rbrace  = f^{-1}(Y)\)</span></p>
+<p>取任意序列 <span class="arithmatex">\(\lbrace x_{n} \rbrace \subseteq A\)</span> 满足 <span class="arithmatex">\(x_{n} \to x\)</span>。因为 <span class="arithmatex">\(f\)</span> 连续，所以 <span class="arithmatex">\(f(x_{n})\to f(x)\)</span></p>
+<p>又因为 <span class="arithmatex">\(x_{n} \in A\)</span>，则 <span class="arithmatex">\(f(x_{n}) \in Y\)</span>。因为 <span class="arithmatex">\(Y\)</span> 是闭集，则 <span class="arithmatex">\(f(x) \in Y\)</span>，因此 <span class="arithmatex">\(x\in A\)</span></p>
+<p><span class="arithmatex">\(A\)</span> 包含了所有的极值点，$ \lbrace x \mid f(x) \in Y\rbrace  $ 是闭集</p>
 </details>
 <p><br></p>
 <hr>
@@ -1025,12 +1099,12 @@ f(X) = \{ f(x) \mid x \in X \}
 <li><span class="arithmatex">\(s_{q} = 1\)</span></li>
 </ul>
 <hr>
-<p>先考虑 Sylow p-子群的个数：已知 <span class="arithmatex">\(s_{p} | pq\)</span> 而 <span class="arithmatex">\(p,q\)</span> 互质，所以 <span class="arithmatex">\(s_{p} \in \{1,p,q,pq\}\)</span></p>
+<p>先考虑 Sylow p-子群的个数：已知 <span class="arithmatex">\(s_{p} | pq\)</span> 而 <span class="arithmatex">\(p,q\)</span> 互质，所以 $s_{p} \in \lbrace 1,p,q,pq\rbrace $</p>
 <ul>
 <li>若 <span class="arithmatex">\(s_{p} = pq\)</span> 或 <span class="arithmatex">\(s_{p} = p\)</span>，则 <span class="arithmatex">\(s_p \equiv 0 \pmod p\)</span>，与 Sylow 第三定理矛盾</li>
 </ul>
 <p>所以 <span class="arithmatex">\(s_{p} = 1 \text{ or } q\)</span></p>
-<p>同理 <span class="arithmatex">\(s_{q} \in \{1,p,q,pq\}\)</span></p>
+<p>同理 $s_{q} \in \lbrace 1,p,q,pq\rbrace $</p>
 <ul>
 <li>若 <span class="arithmatex">\(s_{q} = pq\)</span> 或 <span class="arithmatex">\(s_{q} = q\)</span>，则 <span class="arithmatex">\(s_q \equiv 0 \pmod q\)</span>，与 Sylow 第三定理矛盾</li>
 <li>若 <span class="arithmatex">\(s_{q} = p\)</span> 则 <span class="arithmatex">\(p \equiv 1 \pmod q\)</span>，与 <span class="arithmatex">\(p &lt; q\)</span> 矛盾</li>
@@ -1041,9 +1115,9 @@ f(X) = \{ f(x) \mid x \in X \}
 <ul>
 <li><span class="arithmatex">\(s_{p} = 1, s_{q} = 1\)</span></li>
 </ul>
-<p>此时记唯一的 Sylow p-子群与 Sylow q-子群分别为 <span class="arithmatex">\(P, Q\)</span>，容易证明它们都是循环群，且它们的共同子集 <span class="arithmatex">\(P \cap Q = \{e\}\)</span></p>
+<p>此时记唯一的 Sylow p-子群与 Sylow q-子群分别为 <span class="arithmatex">\(P, Q\)</span>，容易证明它们都是循环群，且它们的共同子集 $P \cap Q = \lbrace e\rbrace $</p>
 <blockquote>
-<p>任何素数阶的群都是循环群，然后使用 Lagrange 定理得到 <span class="arithmatex">\(P \cap Q = \{e\}\)</span></p>
+<p>任何素数阶的群都是循环群，然后使用 Lagrange 定理得到 $P \cap Q = \lbrace e\rbrace $</p>
 <p>这是离散还是 5 学分时的作业题</p>
 </blockquote>
 <p>循环群 <span class="arithmatex">\(P\)</span> 中包含单位元 <span class="arithmatex">\(e\)</span> 和 <span class="arithmatex">\(p-1\)</span> 个阶为 <span class="arithmatex">\(p\)</span> 的元素，对 <span class="arithmatex">\(Q\)</span> 同理</p>
@@ -1057,7 +1131,7 @@ f(X) = \{ f(x) \mid x \in X \}
 <li><span class="arithmatex">\(s_{p} = q, s_{q} = 1\)</span></li>
 </ul>
 <p>同理，唯一的 Sylow q-循环群 <span class="arithmatex">\(Q\)</span> 中包含单位元 <span class="arithmatex">\(e\)</span> 和 <span class="arithmatex">\(q-1\)</span> 个阶为 <span class="arithmatex">\(q\)</span> 的元素</p>
-<p>我们知道任意两个 Sylow p-子群的交集也只能是 <span class="arithmatex">\(\{e\}\)</span>（使用 Lagrange 定理），总共有 <span class="arithmatex">\(q\)</span> 个 Sylow-p 子群，因此阶为 <span class="arithmatex">\(p\)</span> 的元素总共有 <span class="arithmatex">\(q(p-1)\)</span> 个</p>
+<p>我们知道任意两个 Sylow p-子群的交集也只能是 $\lbrace e\rbrace $（使用 Lagrange 定理），总共有 <span class="arithmatex">\(q\)</span> 个 Sylow-p 子群，因此阶为 <span class="arithmatex">\(p\)</span> 的元素总共有 <span class="arithmatex">\(q(p-1)\)</span> 个</p>
 <p>因此阶数为 <span class="arithmatex">\(1,p,q\)</span> 的元素总数为 <span class="arithmatex">\(1 + q(p-1) + (q-1) = pq = |G|\)</span>，这意味着不存在阶为 <span class="arithmatex">\(pq\)</span> 的元素</p>
 <p><span class="arithmatex">\(G\)</span> 的元素最大阶为 <span class="arithmatex">\(d=q\)</span>（已经令 <span class="arithmatex">\(p &lt; q\)</span>），此时 <span class="arithmatex">\(dn = q(q-1)\)</span></p>
 <p>Sylow 第三定理指出 <span class="arithmatex">\(s_q \equiv 1 \pmod p\)</span>，因此 <span class="arithmatex">\(p \mid q-1\)</span>，则 <span class="arithmatex">\(pq \mid q(q-1) = dn\)</span></p>
@@ -1065,7 +1139,7 @@ f(X) = \{ f(x) \mid x \in X \}
 </details>
 <p><br></p>
 <hr>
-<p><strong>3- 初始有一张无向图 <span class="arithmatex">\(G_{203}\)</span>，其中 <span class="arithmatex">\(101\)</span> 个顶点为白色，<span class="arithmatex">\(102\)</span> 个顶点为黑色。</strong></p>
+<p><strong>3- 初始有一张无向连通图 <span class="arithmatex">\(G_{203}\)</span>，其中 <span class="arithmatex">\(101\)</span> 个顶点为白色，<span class="arithmatex">\(102\)</span> 个顶点为黑色。</strong></p>
 <p><strong>每次操作如下：任选一条边 <span class="arithmatex">\((u,v)\)</span>，并选取一个同时与 <span class="arithmatex">\(u,v\)</span> 相邻的公共邻点 <span class="arithmatex">\(w\)</span>。接下来删除顶点 <span class="arithmatex">\(u,v\)</span>，然后：</strong>  </p>
 <ul>
 <li><strong>若 <span class="arithmatex">\(u,v\)</span> 同色，则将 <span class="arithmatex">\(w\)</span> 的颜色翻转；</strong>  </li>
@@ -1102,13 +1176,20 @@ f(X) = \{ f(x) \mid x \in X \}
 <div class="arithmatex">\[
 S = \text{count}(black) - \text{count}(white) \equiv 1 \pmod 4
 \]</div>
-<p>枚举所有的可能性，总共有三种可能：</p>
+<p>枚举所有的可能性，总共有三种可能满足上述约束：</p>
 <ul>
 <li>5 黑 0 白</li>
 <li>3 黑 2 白</li>
 <li>1 黑 4 白</li>
 </ul>
-<p>以上，一定存在黑点，可能存在白点</p>
+<p>现在我们需要证明以上分布都存在可行的构造：我们记最终五个点构成了一条链 <span class="arithmatex">\(P_{5}\)</span>，没有构成三角形，因此无法再删点</p>
+<p>我们不妨反向进行加点操作：每次加两个点 <span class="arithmatex">\(u,v\)</span>，与已存在的点 <span class="arithmatex">\(w\)</span> 构成三角形（这样就可以对应正向删点过程了）</p>
+<ul>
+<li>对于 5 黑 0 白的情况，我们先选定一个黑点，添加两个白点并将这个黑点翻转，此时变成 4 黑 3 白，然后再添加 <span class="arithmatex">\(98\)</span> 次点对，每次加一黑一白两个点（对应 <span class="arithmatex">\(w\)</span> 不翻转），最终可以得到 <span class="arithmatex">\(102\)</span> 个黑点和 <span class="arithmatex">\(101\)</span> 个白点</li>
+<li>对于 3 黑 2 白的情况，我们添加 <span class="arithmatex">\(99\)</span> 次点对，每次加一黑一白两个点（对应 <span class="arithmatex">\(w\)</span> 不翻转），最终可以得到 <span class="arithmatex">\(102\)</span> 个黑点和 <span class="arithmatex">\(101\)</span> 个白点</li>
+<li>对于 1 黑 4 白的情况，我们先选定一个白点，添加两个黑点并将这个白点翻转，此时变成 4 黑 3 白，然后再添加 <span class="arithmatex">\(98\)</span> 次点对，每次加一黑一白两个点（对应 <span class="arithmatex">\(w\)</span> 不翻转），最终可以得到 <span class="arithmatex">\(102\)</span> 个黑点和 <span class="arithmatex">\(101\)</span> 个白点</li>
+</ul>
+<p>以上，这三种情况都可以被构造，因此最后的答案为：一定存在黑点，可能存在白点</p>
 </details>
 <p><br></p>
 <hr>
@@ -1160,22 +1241,22 @@ S = \text{count}(black) - \text{count}(white) \equiv 1 \pmod 4
 <div class="arithmatex">\[
 s_{p} = s_{q} = 1 
 \]</div>
-<p>考虑 Sylow p-子群的个数：已知 <span class="arithmatex">\(s_{p} | pq\)</span> 而 <span class="arithmatex">\(p,q\)</span> 互质，所以 <span class="arithmatex">\(s_{p} \in \{1,p,q,pq\}\)</span></p>
+<p>考虑 Sylow p-子群的个数：已知 <span class="arithmatex">\(s_{p} | pq\)</span> 而 <span class="arithmatex">\(p,q\)</span> 互质，所以 $s_{p} \in \lbrace 1,p,q,pq\rbrace $</p>
 <ul>
 <li>若 <span class="arithmatex">\(s_{p} = pq\)</span> 或 <span class="arithmatex">\(s_{p} = p\)</span>，则 <span class="arithmatex">\(s_p \equiv 0 \pmod p\)</span>，与 Sylow 第三定理矛盾</li>
 <li>若 <span class="arithmatex">\(s_{p} = q\)</span> 则 <span class="arithmatex">\(q \equiv 1 \pmod p\)</span>，与 <span class="arithmatex">\(p \nmid (q-1)\)</span> 的题干条件矛盾</li>
 </ul>
 <p>所以 <span class="arithmatex">\(s_{p} = 1\)</span></p>
-<p>同理 <span class="arithmatex">\(s_{q} \in \{1,p,q,pq\}\)</span></p>
+<p>同理 $s_{q} \in \lbrace 1,p,q,pq\rbrace $</p>
 <ul>
 <li>若 <span class="arithmatex">\(s_{q} = pq\)</span> 或 <span class="arithmatex">\(s_{q} = q\)</span>，则 <span class="arithmatex">\(s_q \equiv 0 \pmod q\)</span>，与 Sylow 第三定理矛盾</li>
 <li>若 <span class="arithmatex">\(s_{q} = p\)</span> 则 <span class="arithmatex">\(p \equiv 1 \pmod q\)</span>，与 <span class="arithmatex">\(p &lt; q\)</span> 矛盾</li>
 </ul>
 <p>所以 <span class="arithmatex">\(s_{q} = 1\)</span></p>
 <hr>
-<p>接下来，记唯一的 Sylow p-子群与 Sylow q-子群分别为 <span class="arithmatex">\(P, Q\)</span>，容易证明它们都是循环群，且它们的共同子集 <span class="arithmatex">\(P \cap Q = \{e\}\)</span></p>
+<p>接下来，记唯一的 Sylow p-子群与 Sylow q-子群分别为 <span class="arithmatex">\(P, Q\)</span>，容易证明它们都是循环群，且它们的共同子集 $P \cap Q = \lbrace e\rbrace $</p>
 <blockquote>
-<p>任何素数阶的群都是循环群，然后使用 Lagrange 定理得到 <span class="arithmatex">\(P \cap Q = \{e\}\)</span></p>
+<p>任何素数阶的群都是循环群，然后使用 Lagrange 定理得到 $P \cap Q = \lbrace e\rbrace $</p>
 </blockquote>
 <p>循环群 <span class="arithmatex">\(P\)</span> 中包含单位元 <span class="arithmatex">\(e\)</span> 和 <span class="arithmatex">\(p-1\)</span> 个阶为 <span class="arithmatex">\(p\)</span> 的元素，对 <span class="arithmatex">\(Q\)</span> 同理</p>
 <p>因此阶数为 <span class="arithmatex">\(1,p,q\)</span> 的元素总数为 <span class="arithmatex">\(1 + (p-1) + (q-1) = p+q-1\)</span></p>
@@ -1195,13 +1276,13 @@ x \le_P y \iff f(x) \le_Q f(y),
 </details>
 <details class="abstract">
 <summary>仅供参考的解答</summary>
-<p><span class="arithmatex">\((A, \preceq)\)</span> 是可数全序集，因此存在一种 <span class="arithmatex">\(A\)</span> 的枚举使得 <span class="arithmatex">\(A = \{a_1, a_2, \cdots\}\)</span></p>
+<p><span class="arithmatex">\((A, \preceq)\)</span> 是可数全序集，因此存在一种 <span class="arithmatex">\(A\)</span> 的枚举使得 $A = \lbrace a_1, a_2, \cdots\rbrace $</p>
 <p>对于函数 <span class="arithmatex">\(f : A \to \mathbb{Q} \cap (0, 1)\)</span>，定义 <span class="arithmatex">\(f(a_1) = p\)</span>，这里 <span class="arithmatex">\(p \in \mathbb{Q} \cap (0, 1)\)</span> 是一个常数，为了方便可以取 <span class="arithmatex">\(\frac{1}{2}\)</span> 或其他合法值</p>
-<p>假定 <span class="arithmatex">\(A_{n-1} = \{a_1, \cdots, a_{n-1}\}\)</span> 已经映射到了 <span class="arithmatex">\(B_{n-1} = \{f(a_1), \cdots, f(a_{n-1})\}\)</span> 并且具有单射性与保序性，现在对于 <span class="arithmatex">\(a_n\)</span>，我们可以将 <span class="arithmatex">\(A_{n-1}\)</span> 分为两部分：</p>
+<p>假定 $A_{n-1} = \lbrace a_1, \cdots, a_{n-1}\rbrace $ 已经映射到了 $B_{n-1} = \lbrace f(a_1), \cdots, f(a_{n-1})\rbrace $ 并且具有单射性与保序性，现在对于 <span class="arithmatex">\(a_n\)</span>，我们可以将 <span class="arithmatex">\(A_{n-1}\)</span> 分为两部分：</p>
 <div class="arithmatex">\[
-L = \{a_i \in S_{n-1} \mid a_i \preceq a_n\}, \quad R = \{a_i \in S_{n-1} \mid a_n \preceq a_i\}
+L = \lbrace a_i \in S_{n-1} \mid a_i \preceq a_n\rbrace , \quad R = \lbrace a_i \in S_{n-1} \mid a_n \preceq a_i\rbrace 
 \]</div>
-<p>不妨取 <span class="arithmatex">\(f(L) = \max\{f(a_i) \mid a_i \in L\}, \ f(R) = \min\{f(a_i) \mid a_i \in R\}\)</span>，取 <span class="arithmatex">\(f(a_n) \in (f(L), f(R)) \cap \mathbb{Q}\)</span>，此时的 <span class="arithmatex">\(f(a_n)\)</span> 依旧满足单射性与保序性，而存在性由有理数在实数域的稠密性决定（即在任意两个有理数之间存在无限多个有理数）</p>
+<p>不妨取 $f(L) = \max\lbrace f(a_i) \mid a_i \in L\rbrace , \ f(R) = \min\lbrace f(a_i) \mid a_i \in R\rbrace $，取 <span class="arithmatex">\(f(a_n) \in (f(L), f(R)) \cap \mathbb{Q}\)</span>，此时的 <span class="arithmatex">\(f(a_n)\)</span> 依旧满足单射性与保序性，而存在性由有理数在实数域的稠密性决定（即在任意两个有理数之间存在无限多个有理数）</p>
 <p>因此这样的 <span class="arithmatex">\(f\)</span> 的构造是成立的，也就存在对应的序同构</p>
 <blockquote>
 <p>解答写的不太像人类，还是问 LLMs 吧</p>
@@ -1221,6 +1302,7 @@ L = \{a_i \in S_{n-1} \mid a_i \preceq a_n\}, \quad R = \{a_i \in S_{n-1} \mid a
 <p><span class="arithmatex">\(A \neq B \rightarrow A - B \neq O\)</span>，由之前的证明可知 <span class="arithmatex">\(A^2 + B^2\)</span> 一定不可逆（也就是不存在使得 <span class="arithmatex">\(A^2 + B^2\)</span> 可逆的条件）</p>
 <blockquote>
 <p>原题写的就是“给出使得 <span class="arithmatex">\(A^2+B^2\)</span> 可逆的条件”</p>
+<p>这一问法确实有误导作用，但是考场上确实看到的就是这样的题干</p>
 </blockquote>
 </details>
 <p><br></p>
@@ -1245,7 +1327,7 @@ L = \{a_i \in S_{n-1} \mid a_i \preceq a_n\}, \quad R = \{a_i \in S_{n-1} \mid a
 <p><strong>1- 给出对称群和交错群的定义，证明：对称群 <span class="arithmatex">\(S_{n}\)</span> 与交错群 <span class="arithmatex">\(A_{n+2}\)</span> 的某个子群同构。</strong></p>
 <details class="quote">
 <summary>对称群和交错群</summary>
-<p><strong>对称群</strong> $ S_n $：由 $ n $ 个不同元素的所有 <strong>置换</strong>（双射 $ {1,\dots,n} \to {1,\dots,n} $）组成的群，群运算为置换的复合。</p>
+<p><strong>对称群</strong> $ S_n $：由 $ n $ 个不同元素的所有 <strong>置换</strong>（双射 $ \lbrace 1,\dots,n\rbrace  \to \lbrace 1,\dots,n\rbrace  $）组成的群，群运算为置换的复合。</p>
 <p><strong>交错群</strong> $ A_n $：对称群 $ S_n $ 中所有 <strong>偶置换</strong>（可表示为偶数个对换的乘积）构成的子群。</p>
 </details>
 <p><br></p>
@@ -1271,7 +1353,7 @@ L = \{a_i \in S_{n-1} \mid a_i \preceq a_n\}, \quad R = \{a_i \in S_{n-1} \mid a
 <p><strong>1- 回忆有限生成子群的定义如下：如果 <span class="arithmatex">\(G\)</span> 是一个群，<span class="arithmatex">\(S\)</span> 是 <span class="arithmatex">\(G\)</span> 的一个有限子集，那么由 <span class="arithmatex">\(S\)</span> 中的元素以及他们的逆元经过有限多次运算得到的结果构成的集合是 <span class="arithmatex">\(G\)</span> 的子群，称为由 <span class="arithmatex">\(S\)</span> 生成的子群。现在用 <span class="arithmatex">\(\mathbb{Q}\)</span> 表示有理数的加法群，用 <span class="arithmatex">\(\mathbb{Z}\)</span> 表示整数的加法群。显然，<span class="arithmatex">\(\mathbb{Z}\)</span> 是 <span class="arithmatex">\(\mathbb{Q}\)</span> 的正规子群。那么商群 <span class="arithmatex">\(\mathbb{Q}/\mathbb{Z}\)</span> 的有限生成子群一定是循环群吗？如果是，请给出证明；如果不是，请给出反例。</strong></p>
 <blockquote>
 <p><span class="arithmatex">\(N\)</span> 是 <span class="arithmatex">\(G\)</span> 的正规子群是指 <span class="arithmatex">\(N\trianglelefteq G \iff \forall a\in G, aN=Na\)</span>；</p>
-<p>商群 <span class="arithmatex">\(G/N\)</span> 指：若 <span class="arithmatex">\(N\trianglelefteq G\)</span>，<span class="arithmatex">\(N\)</span> 在 <span class="arithmatex">\(G\)</span> 中的左陪集集合 <span class="arithmatex">\(\{aN \mid a\in G\}\)</span> 与群中的运算构成的群。</p>
+<p>商群 <span class="arithmatex">\(G/N\)</span> 指：若 <span class="arithmatex">\(N\trianglelefteq G\)</span>，<span class="arithmatex">\(N\)</span> 在 <span class="arithmatex">\(G\)</span> 中的左陪集集合 $\lbrace aN \mid a\in G\rbrace $ 与群中的运算构成的群。</p>
 </blockquote>
 <p><br></p>
 <hr>
@@ -1340,13 +1422,97 @@ h(y) = f(a, y)
 <p><strong>5- 用与、或、非门设计一个三人表决器，输入三个信号，输出少数服从多数后的结果。</strong></p>
 <p><br></p>
 <h2 id="_3">机试</h2>
+<details class="warning">
+<summary>某些题目附带的“参考原题”只是他们在题目内容上明显相似，并不一定有相同的数据范围，这可能会带来预期解时间复杂度等约束的不同</summary>
+</details>
+<h3 id="2026_1">2026 年</h3>
+<p><strong>1- 小摩尔正在玩一款消消乐游戏。游戏最多进行 <span class="arithmatex">\(n\)</span> 轮，共有 <span class="arithmatex">\(m\)</span> 个独立的队列，所有队列的最大长度限制均为 <span class="arithmatex">\(h\)</span>。</strong></p>
+<p><strong>在每一轮游戏中，将依次执行以下三个步骤：</strong></p>
+<ol>
+<li><strong>发牌入队：每个队列的<u>队首</u>都会被塞入一个由系统预先设定好的硬币。</strong></li>
+<li><strong>溢出判定：检查是否存在任意一个队列的长度超过了限制 <span class="arithmatex">\(h\)</span>。如果存在，游戏立刻结束（本轮不进行后续得分结算）。</strong></li>
+<li><strong>消除结算：若游戏未结束，系统会发放给小摩尔一个硬币。小摩尔需要选择<u>一个</u>队列，从该队列的<u>队尾</u>开始，寻找与他手中硬币面值相同的连续硬币序列并将其“消除”。本轮的得分为消除的硬币总数。（注：若所有队列都没有可消除的硬币，则小摩尔放弃使用该硬币，得分为 <span class="arithmatex">\(0\)</span>）。</strong></li>
+</ol>
+<p><strong>为了最大化收益，小摩尔在选择队列时会严格遵循以下贪心策略：</strong></p>
+<ul>
+<li><strong>第一优先级：优先选择能够消除<u>最多</u>硬币的队列。</strong></li>
+<li><strong>第二优先级：若有多个队列能消除的硬币数相同（且为最大值），优先选择当前<u>剩余硬币总数最多</u>的队列。</strong></li>
+<li><strong>第三优先级：若前两个条件均有多个队列满足，优先选取编号<u>最靠左</u>（即队列编号 <span class="arithmatex">\(1 \sim m\)</span> 中最小）的队列。</strong></li>
+</ul>
+<p><strong>请编写程序，计算并输出小摩尔按照此策略在游戏结束时获得的总收益。</strong></p>
+<details class="abstract">
+<summary>输入、输出格式，数据范围</summary>
+<p><strong>输入</strong></p>
+<p>第一行包含三个正整数 <span class="arithmatex">\(n\)</span>、<span class="arithmatex">\(m\)</span> 和 <span class="arithmatex">\(h\)</span>，分别表示游戏的轮数、队列的数量以及队列的长度上限。</p>
+<p>接下来的 <span class="arithmatex">\(m\)</span> 行，每行用于描述第 <span class="arithmatex">\(i\)</span> 个队列预设的硬币入队序列。每行的第一个数字为 <span class="arithmatex">\(k\)</span>，随后跟着 <span class="arithmatex">\(k\)</span> 个数对。第 <span class="arithmatex">\(j\)</span> 个数对记为 <span class="arithmatex">\(c_j\)</span> 和 <span class="arithmatex">\(v_j\)</span>，表示在该队列中，接下来会连续塞入 <span class="arithmatex">\(c_j\)</span> 个面值为 <span class="arithmatex">\(v_j\)</span> 的硬币。（数据保证对每个队列，预设的硬币总数 <span class="arithmatex">\(\sum c_j = n\)</span>）。</p>
+<p>最后一行包含 <span class="arithmatex">\(n\)</span> 个正整数，依次表示在第 <span class="arithmatex">\(1\)</span> 到第 <span class="arithmatex">\(n\)</span> 轮中，系统发放给小摩尔用于消除的硬币面值。</p>
+<p><strong>输出</strong></p>
+<p>输出一行一个整数，表示小摩尔按照上述策略所获得的总收益。</p>
+<p><strong>数据范围</strong></p>
+<ul>
+<li>对于单组或多组测试数据，保证所有数据的 <span class="arithmatex">\(\sum n \le 3000\)</span>，<span class="arithmatex">\(\sum m \le 3000\)</span>。</li>
+<li><span class="arithmatex">\(1 \le n, m, h, k \le 3000\)</span></li>
+<li><span class="arithmatex">\(c_j \ge 1\)</span>，所有硬币的面值 <span class="arithmatex">\(v_j\)</span> 及系统发放的硬币面值均在合理整型范围内。</li>
+</ul>
+</details>
+<p><br></p>
+<hr>
+<p><strong>2- 有一个 <span class="arithmatex">\(M\times N\)</span> 的二维方阵，每个格子都是黑色或白色的。可以通过一次操作，将某个格子及其周围的四个格子（如有）同时反转颜色。现在给定方阵的初始状态，判断是否可以通过有限次操作，使得所有的格子颜色都为白色。</strong></p>
+<details class="abstract">
+<summary>输入、输出格式，数据范围</summary>
+<p><strong>输入</strong></p>
+<p>第一行包含两个正整数 <span class="arithmatex">\(M\)</span>、<span class="arithmatex">\(N\)</span></p>
+<p>接下来 <span class="arithmatex">\(M\)</span> 行，每行 <span class="arithmatex">\(N\)</span> 个整数表示初始方阵状态。<span class="arithmatex">\(0\)</span> 表示白色，<span class="arithmatex">\(1\)</span> 表示黑色</p>
+<p><strong>输出</strong></p>
+<p>如果无法实现，输出 <code>impossible</code></p>
+<p>否则，输出一个整数，表示最少操作次数</p>
+<p><strong>数据范围</strong></p>
+<ul>
+<li><span class="arithmatex">\(M \times N \leq 300\)</span></li>
+</ul>
+</details>
+<details class="quote" open="open">
+<summary>有原题：<a href="https://www.luogu.com.cn/problem/P1985">P1985 USACO07OPEN 翻转棋 Fliptile S - 洛谷</a></summary>
+<p>原题数据范围 <span class="arithmatex">\(1\leq M, N \leq 15\)</span>，与考试题数据范围还算接近</p>
+</details>
+<p><br></p>
+<hr>
+<p><strong>3- 给定一张 <span class="arithmatex">\(n\)</span> 个点、<span class="arithmatex">\(m\)</span> 条边的无向图，有两个人 <span class="arithmatex">\(A, B\)</span> 在图上玩游戏：<span class="arithmatex">\(A\)</span> 初始在点 <span class="arithmatex">\(s\)</span>，<span class="arithmatex">\(A\)</span> 的任务是走到点 <span class="arithmatex">\(t\)</span>，而 <span class="arithmatex">\(B\)</span> 的任务是阻止 <span class="arithmatex">\(A\)</span> 走到点 <span class="arithmatex">\(t\)</span>。</strong></p>
+<p><strong>具体的游戏玩法为：</strong></p>
+<ul>
+<li><strong>首先让 <span class="arithmatex">\(A\)</span> 自由走 <span class="arithmatex">\(q\)</span> 步（每步走到当前点的某个相邻点）。</strong></li>
+<li><strong>接下来，双方交替进行操作：<span class="arithmatex">\(A\)</span> 先走 <span class="arithmatex">\(1\)</span> 步，然后 <span class="arithmatex">\(B\)</span> 选择 <span class="arithmatex">\(A\)</span> 所在位置的某一条邻边，将其删掉。</strong></li>
+</ul>
+<p><strong>双方都采取最优策略，请问对于给定的无向图，<span class="arithmatex">\(A\)</span> 是否可以走到终点 <span class="arithmatex">\(t\)</span>？</strong></p>
+<details class="abstract">
+<summary>输入、输出格式，数据范围</summary>
+<p><strong>输入</strong></p>
+<p>第一行输入三个整数 <code>n m q</code>； </p>
+<p>接下来 <span class="arithmatex">\(m\)</span> 行，每行输入两个整数 <code>u v</code> 表示一条无向边； </p>
+<p>最后一行输入两个整数 <code>s t</code>。</p>
+<p><strong>输出</strong></p>
+<p>如果 <span class="arithmatex">\(A\)</span> 能到达终点 <span class="arithmatex">\(t\)</span>，输出 <code>YES</code>，否则输出 <code>NO</code>。</p>
+<p><strong>数据范围</strong></p>
+<ul>
+<li><span class="arithmatex">\(1 \le n,m \le 10^5\)</span>，<span class="arithmatex">\(0 \le q \le 10^9\)</span>，<span class="arithmatex">\(1 \le s,t \le n\)</span>。 </li>
+<li><span class="arithmatex">\(m \leq 5\times n\)</span>，<span class="arithmatex">\(s\ne t\)</span>。</li>
+<li>总共 20 个测试点，前两个满足 <span class="arithmatex">\(n \leq 10\)</span>，一部分满足 <span class="arithmatex">\(n \le 1000\)</span>。</li>
+<li>部分测试点保证 <span class="arithmatex">\(q=1\)</span>。</li>
+<li>部分测试点保证无向图没有重边。</li>
+<li>部分测试点保证无向图没有重边，并且是一条链。</li>
+</ul>
+</details>
+<p><br></p>
 <h3 id="2025_1">2025 年</h3>
 <p><strong>1- 你有共 <span class="arithmatex">\(n\)</span> 个冰系/火系的士兵，敌方有 <span class="arithmatex">\(m\)</span> 个冰系士兵与 <span class="arithmatex">\(n-m\)</span> 个火系士兵，你的每个士兵都有获胜经验值 <span class="arithmatex">\(A_i\)</span>。现规定：当你的冰系士兵攻击对方的一个火系士兵时，你获得 <span class="arithmatex">\(1.5\times A_i\)</span> 经验值；当你的火系士兵攻击对面的冰系士兵时，你获得 <span class="arithmatex">\(2\times A_i\)</span> 经验值；否则同系士兵间攻击获得 <span class="arithmatex">\(1\times A_i\)</span> 经验值。安排你的每个士兵的攻击对象，给出能获得的经验值的最大值。</strong></p>
 <details class="abstract">
 <summary>输入、输出格式，数据范围</summary>
+<p><strong>输入</strong></p>
 <p>第一行输入 <code>n,m</code>。</p>
 <p>接下来 <code>n</code> 行给出你的每个士兵的参数 (两个数，用空格分隔)，第一个数表示士兵类型 (<code>0</code> 为冰系，<code>1</code> 为火系)，第二个数表示 <span class="arithmatex">\(A_i\)</span> 的值。</p>
-<p>输出一个数表示最大可获取的经验值。</p>
+<p><strong>输出</strong></p>
+<p>一个数，表示最大可获取的经验值。</p>
+<p><strong>数据范围</strong></p>
 <p>总共有 10 个测试点，每个测试点 10 分，时限 1000ms。</p>
 <p><strong><span class="arithmatex">\(A_i\)</span> 的值都是 10 的倍数。</strong></p>
 </details>
@@ -1356,9 +1522,12 @@ h(y) = f(a, y)
 <p>原题干提醒：<strong>注意 <code>long long</code> 的使用</strong></p>
 <details class="abstract">
 <summary>输入、输出格式，数据范围</summary>
+<p><strong>输入</strong></p>
 <p>第一行输入 <code>t</code> 表示测试数据个数。</p>
 <p>接下来对于每个 <code>t</code>，第一行输入 <code>n</code> 表示层数，接下来 <code>n</code> 行每行两个数 <code>pi,qi</code>。</p>
+<p><strong>输出</strong></p>
 <p>对于每个 <code>t</code> 输出一个数表示最小行动代价和。</p>
+<p><strong>数据范围</strong></p>
 <p>总共有 20 个测试点，每个测试点 5 分，时限 3000ms。</p>
 <p>存在 30% 的测试点，<span class="arithmatex">\(P_i,Q_i \leq 1\)</span>，其他测试点 <span class="arithmatex">\(P_i,Q_i \leq 10^9\)</span>。</p>
 <p><span class="arithmatex">\(n\)</span> 的大小在测试集中从 <span class="arithmatex">\(\leq10\)</span> 增大至 <span class="arithmatex">\(\leq 500\)</span>， <span class="arithmatex">\(\leq1000\)</span>。</p>
@@ -1371,11 +1540,14 @@ h(y) = f(a, y)
 <p><strong>3- 给定一个有向图，点有点权，边有边权，定义一条路径的长度为：经过的边的边权之和 + 经过的点的最大点权。现给定任意两点分别作为起点与终点，求最短路长度。</strong></p>
 <details class="abstract">
 <summary>输入、输出格式，数据范围</summary>
+<p><strong>输入</strong></p>
 <p>第一行输入 <code>n</code>, <code>q</code> 分别表示顶点数与接下来询问两个点的最短路的次数。</p>
 <p>接下来一行输入 <code>n</code> 个数记录每个点的点权。</p>
 <p>接下来 <code>n</code> 行每行 <code>n</code> 个数字, 表示权矩阵 <span class="arithmatex">\(A\)</span>, 保证 <code>A[i][i] = 0</code>。</p>
 <p>接下来 <code>q</code> 行每行两个数字 <code>x</code>,<code>y</code> 表示起点与终点。</p>
+<p><strong>输出</strong></p>
 <p>对于每个 <code>q</code> 输出一个数表示该询问下最短路长度。</p>
+<p><strong>数据范围</strong></p>
 <p>总共有 10 个测试点, 每个测试点 10 分, 时限 1000ms。</p>
 <p>测试集中 <code>n</code> 全为 500, 询问次数 <code>q</code> 从 <code>1</code> 增大至 <code>100000</code> 。</p>
 <p>点权与边权取值范围为 <span class="arithmatex">\([0,10000]\)</span>。</p>
@@ -1507,6 +1679,43 @@ h(y) = f(a, y)
 <p>（例如在下图中，程序选择了一个 2 行 2 列的矩形，折线与该矩形的边共有 4 个交点。）</p>
 <p><a class="glightbox" data-type="image" data-width="80%" data-height="auto" href="../images/image-20260602030409118.png" data-desc-position="bottom"><img alt="image-20260602030409118" src="../images/image-20260602030409118.png"></a></p>
 <p><strong>请用尽量少的查询，找到折线的头和尾。</strong></p>
+<p><br></p>
+<h2 id="_4">面试</h2>
+<h3 id="2026_2">2026 年</h3>
+<details class="warning" open="open">
+<summary>因为今年面试相比去年面试风格变化较大，尤其是知识型提问比重增大，于是考虑搜集了一下面试的问题</summary>
+<p>由 Claude Code 进行神秘的汇总，其实你也能看出来下面的问题是分类放置的</p>
+<p>可以看得出来，面试的问题主要分为四类：AI 使用、算法、高级程序设计、操作系统（仅大二），并包含一些与 CS 无关的杂项问题</p>
+</details>
+<details class="failure">
+<summary>以下内容仅供参考</summary>
+</details>
+<ul>
+<li>原专业的 GPA 与排名如何？</li>
+<li>高中是否参加过信息学竞赛（OI）？</li>
+<li>是否参加过学生组织或社团活动？</li>
+<li>为什么想转入计算机专业？如果转成功，有什么规划？</li>
+<li>除了准入课程之外，还为转专业做了哪些准备？</li>
+<li>平时如何使用 AI 工具？有没有用 AI 辅助写过程序？如何保证 AI 生成的程序是正确的？</li>
+<li>如何结合 AI 完成《高级程序设计》的 PA？写过哪些非课内的程序？</li>
+<li>如何看待"氛围编程"（Vibe Coding）？</li>
+<li>你喜欢哪种编程语言？C++ 和 Python 有什么区别？编译型语言和解释型语言的区别是什么？</li>
+<li>数组和链表的区别是什么？</li>
+<li>什么是并查集，有什么应用，有什么缺点？</li>
+<li>什么是继承、多态？</li>
+<li>数据封装（Encapsulation）有什么好处？</li>
+<li>类和对象为什么比函数式编程更好？</li>
+<li>分析快速排序的时间复杂度；能否将快排从递归转化为循环（迭代）实现？思路是什么？</li>
+<li>Prim 算法和 Kruskal 算法有什么区别？生成的 MST 是否唯一？你在自己实现 MST 时遇到过哪些坑？</li>
+<li>有 5 个球和 1 枚硬币，请设计一个"取两个球"的方案，使得每个球被取到的概率相等。</li>
+<li>什么是矩阵的秩？在线性变换中，秩有什么几何意义？有哪些实际应用/场景与秩有关？</li>
+<li>在网页端与大模型对话与智能体对话有什么区别？</li>
+<li>如何编写一个程序来测量两部手机之间的距离？</li>
+<li>计算机存储的都是 0/1 序列，它如何知道一段二进制数据是图像、机器指令还是文字？</li>
+<li>【操作系统 for 大二】操作系统如何防止用户程序直接访问内核态内存？如果程序在用户态尝试直接访问内核态地址，会发生什么？</li>
+<li>【操作系统 for 大二】什么是时间分片？</li>
+<li>【操作系统 for 大二】为什么程序员编写程序时不需要关心目标机器的物理内存大小？对于物理内存不足的机器，程序的内存需求超过物理内存时为什么仍能正常运行？</li>
+</ul>
 
 
 
