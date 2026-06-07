@@ -32,16 +32,39 @@ repo_url: https://github.com/Nopthon/How-to-switch-to-a-CS-major-at-NJU
 
 repo_name: 转cs指北 for NJU 
 
+plugins:
+  - search
+  - glightbox:
+      width: 80%
+
 markdown_extensions:
+  - md_in_html
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          #format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx.inline
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   - https://fonts.loli.net/css?family=JetBrains Mono:400,500,600,700&display=swap
   - https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/lxgwwenkai-regular.css
   - https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/lxgwwenkaimono-bold.css
+
+extra_javascript:
+  - stylesheets/extra.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
 
 nav: 
   - Update: update.md
@@ -53,3 +76,4 @@ nav:
   - 四. 一些 Q&A: Part4.md
   - 五. 作为一个零基础转p的个人建议: Part5.md
   - 最后...: Part6.md
+  - 📕: problems.md
