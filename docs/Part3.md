@@ -8,8 +8,6 @@
     
     你可以在转 cs 交流群里获取这份文件：1055656826 （这是广告吗），也可以在下面的电子书库中得到这份文件
     
-    以及笔者自己整理了一份面向 CSer 的电子书库，可以自行获取电子书
-    
     [CS-Textbook-Archive](https://table.nju.edu.cn/apps/custom/csbooks)
 
 <img src="https://pic1.imgdb.cn/item/68d89be6c5157e1a883e2aca.png" alt="https://pic1.imgdb.cn/item/68d89be6c5157e1a883e2aca.png" />
