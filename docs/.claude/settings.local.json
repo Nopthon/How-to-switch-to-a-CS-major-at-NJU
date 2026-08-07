@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/zyh/.claude/skills/pdf-skill/**)",
+      "Bash(pip install *)"
+    ]
+  }
+}

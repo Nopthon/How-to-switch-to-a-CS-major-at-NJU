@@ -57,9 +57,9 @@ body {
     font-size: .7rem;
 }
 
-/* 各级标题的字体大小也修改一下 */
-.md-content h2 { font-size: 1.35rem; }
-.md-content h3 { font-size: 1.20rem; }
-.md-content h4 { font-size: 1.10rem; }
-.md-content h5 { font-size: 1rem; }
-.md-content h6 { font-size: 0.9rem; }
+/* 各级标题的字体大小和标题间距也修改一下 */
+.md-content h2 { font-size: 1.35rem; margin-top: 3rem; }
+.md-content h3 { font-size: 1.20rem; margin-top: 2.5rem; }
+.md-content h4 { font-size: 1.10rem; margin-top: 1.5rem; }
+.md-content h5 { font-size: 1rem; margin-top: 1.2rem; }
+.md-content h6 { font-size: 0.9rem; margin-top: 0.8rem; }
